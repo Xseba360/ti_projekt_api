@@ -1,0 +1,14 @@
+POST http://localhost:3000/v1/products/create
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "description": "Product 1 description",
+  "price": 100,
+  "quantity": 10,
+  "photos": [
+    "https://example.com/photo1.jpg",
+    "https://example.com/photo2.jpg"
+  ],
+  "category": "5f1b0b9b0b9b0b9b0b9b0b9b"
+}

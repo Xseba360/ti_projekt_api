@@ -1,0 +1,38 @@
+{
+  "name": "ti_projekt_api",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "build:changelog": "npx @discordx/changelog --root=src",
+    "dev": "ts-node-esm src/main.ts",
+    "start": "node build/main.js",
+    "watch": "nodemon --exec ts-node-esm src/main.ts"
+  },
+  "dependencies": {
+    "@discordx/importer": "^1.1.10",
+    "@discordx/koa": "^1.1.2",
+    "@koa/router": "^12.0.0",
+    "http-status-codes": "^2.2.0",
+    "koa-body": "^6.0.1",
+    "koa": "^2.13.4",
+    "sqlite3": "^5.1.2",
+    "sqlite": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__router": "^12.0.0",
+    "@types/node": "^18.11.7",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}

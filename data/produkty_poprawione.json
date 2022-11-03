@@ -1,0 +1,1060 @@
+﻿[
+  {
+    "id": "1",
+    "name": "MARKUS",
+    "category": "Krzesło biurowe",
+    "price": "559",
+    "description": "Dopasuj wysokość i kąt nachylenia krzesła, aby dzień pracy był komfortowy - siatkowe oparcie przepuszcza powietrze, zapewniając odpowiednią temperaturę, nawet podczas dużego obciążenia pracą. Stworzony, aby służyć przez wiele lat.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/markus-krzeslo-biurowe-vissle-ciemnoszary__0724714_pe734597_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/markus-krzeslo-biurowe-vissle-ciemnoszary__0399810_pe563882_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/markus-krzeslo-biurowe-vissle-ciemnoszary__0491538_pe625202_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "HUVUDSPELARE",
+    "category": "Krzesło biurowe",
+    "price": "259",
+    "description": "Dostosuj wysokość i nachylenie, aby usiąść naprawdę wygodnie i rozpocząć grę. Oparcie zapewnia dobre wsparcie lędźwi - i nawet w gorączce grania jest Ci chłodno dzięki siatce mesh.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/huvudspelare-krzeslo-gamingowe-biurowe-czarny__1039672_pe840417_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/huvudspelare-krzeslo-gamingowe-biurowe-czarny__1046390_ph180886_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/huvudspelare-krzeslo-gamingowe-biurowe-czarny__0962973_pe808270_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "MATCHSPEL",
+    "category": "Krzesło biurowe",
+    "price": "499",
+    "description": "Krzesło gamingowe MATCHSPEL pomaga grać na najwyższych obrotach. Całe ciało zyskuje dobre wsparcie, a wysokość krzesła, zagłówka i podłokietników można regulować, aby usiąść naprawdę wygodnie, gdy zaczyna się gra.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/matchspel-krzeslo-gamingowe-biurowe-bomstad-czarny__0985645_pe816716_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/matchspel-krzeslo-gamingowe-biurowe-bomstad-czarny__1034552_pe837771_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/matchspel-krzeslo-gamingowe-biurowe-bomstad-czarny__0997487_pe822685_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "RENBERGET",
+    "category": "Krzesło biurowe",
+    "price": "299",
+    "description": "Wygodne, lekkie i łatwe do przemieszczania. Kształt podłokietników podnosi komfort, a mechanizm hamujący kółka utrzymuje krzesło w miejscu, gdy wstajesz, a zwalnia się, gdy siadasz.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/renberget-krzeslo-obrotowe-bomstad-czarny__1020135_pe831794_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/renberget-krzeslo-obrotowe-bomstad-czarny__1025981_pe834276_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/renberget-krzeslo-obrotowe-bomstad-czarny__1045858_pe842741_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "HATTEFJÄLL",
+    "category": "Krzesło biurowe",
+    "price": "999",
+    "description": "Krzesło biurowe HATTEFJÄLL ma elegancki, łagodny kształt i regulowane oparcie lędźwiowe, głębokość siedziska, podłokietniki i automatyczny mechanizm pochylenia – to prawdopodobnie nasze najbardziej ergonomiczne krzesło. Na wszystko gwarancja 10 lat!",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hattefjaell-krzeslo-biurowe-z-podlokietnikami-gunnared-srednioszary__1019093_pe831300_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hattefjaell-krzeslo-biurowe-z-podlokietnikami-gunnared-srednioszary__1123538_pe874809_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hattefjaell-krzeslo-biurowe-z-podlokietnikami-gunnared-srednioszary__0590435_pe673884_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "VALEVAG",
+    "category": "Materace",
+    "price": "1499",
+    "description": "Twardy materac o wysokości 24 cm z indywidualnymi sprężynami kieszeniowymi. Równomierne rozłożenie ciężaru ciała w strefach komfortu zapewnia bardziej miękkie wsparcie dla bioder i ramion. Obfita warstwa pianki podnosi komfort.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/valevag-materac-sprezyny-kieszeniowe-twardy-jasnoniebieski__1150857_pe884903_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/valevag-materac-sprezyny-kieszeniowe-twardy-jasnoniebieski__0928313_pe789779_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/valevag-materac-sprezyny-kieszeniowe-twardy-jasnoniebieski__1044425_pe842155_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "VESTEROY",
+    "category": "Materace",
+    "price": "899",
+    "description": "Średnio twardy materac o wysokości 20 cm z indywidualnymi sprężynami kieszeniowymi i warstwą pianki oferuje komfort i wsparcie. Pokrycie z dodatkową pianką i miękkim, elastycznym materiałem zapewnia jeszcze większy komfort.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/vesteroey-materac-sprezyny-kieszeniowe-srednio-twardy-jasnoniebieski__1150852_pe884907_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/vesteroey-materac-sprezyny-kieszeniowe-srednio-twardy-jasnoniebieski__0928312_pe789777_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/vesteroey-materac-sprezyny-kieszeniowe-srednio-twardy-jasnoniebieski__1044459_pe842173_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "AGOTNES",
+    "category": "Materace",
+    "price": "199",
+    "description": "Ten podstawowy twardy materac z pianki ma wysokość 10 cm. Sprężysta pianka połączona jest z miękką warstwą watoliny.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/agotnes-materac-piankowy-twardy-jasnoniebieski__0986609_pe818096_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/agotnes-materac-piankowy-twardy-jasnoniebieski__1044421_pe842145_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/agotnes-materac-piankowy-twardy-jasnoniebieski__0975992_pe812953_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "ASVANG",
+    "category": "Materace",
+    "price": "359",
+    "description": "Ten prosty twardy materac z pianki ma wysokość 12 cm. Sprężysta pianka połączona jest z miękką warstwą watoliny w pikowanym pokrowcu nadającym się do prania.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/asvang-materac-piankowy-twardy-bialy__0986620_pe818094_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/asvang-materac-piankowy-twardy-bialy__1027661_pe834972_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/asvang-materac-piankowy-twardy-bialy__1044441_pe842162_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "VESTMARKA",
+    "category": "Materace",
+    "price": "699",
+    "description": "Prosty materac sprężynowy o wysokości 18 cm. Jest średnio twardy, ma sprężyny Bonnell, a warstwa pianki na wierzchu i watolina w pikowanym pokryciu zapewniają dodatkową amortyzację.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/vestmarka-materac-sprezynowy-srednio-twardy-jasnoniebieski__1150828_pe884909_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/vestmarka-materac-sprezynowy-srednio-twardy-jasnoniebieski__0928311_pe789776_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/vestmarka-materac-sprezynowy-srednio-twardy-jasnoniebieski__0905185_pe783057_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "MISTERHULT",
+    "category": "Lampy",
+    "price": "254",
+    "description": "Lampa wisząca, bambus/wykonano ręcznie 45cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/misterhult-lampa-wiszaca-bambus-wykonano-recznie__0794605_pe765667_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/misterhult-lampa-wiszaca-bambus-wykonano-recznie__0794604_pe765668_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/misterhult-lampa-wiszaca-bambus-wykonano-recznie__0937760_ph168926_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "NYMÅNE",
+    "category": "Lampy",
+    "price": "194",
+    "description": "Oświetlenie sufitowe/4 reflektory, antracyt",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/nymane-oswietlenie-sufitowe-4-reflektory-antracyt__0646789_pe704306_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/nymane-oswietlenie-sufitowe-4-reflektory-antracyt__0879867_pe707508_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/nymane-oswietlenie-sufitowe-4-reflektory-antracyt__0879864_pe704307_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "BARLAST",
+    "category": "Lampy",
+    "price": "41",
+    "description": "Lampa podłogowa, czarny/biały 150cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/barlast-lampa-podlogowa-czarny-bialy__0957676_pe805130_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/barlast-lampa-podlogowa-czarny-bialy__0957677_pe805131_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/barlast-lampa-podlogowa-czarny-bialy__0957678_pe805133_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "BRUNSTA / HEMMA",
+    "category": "Lampy",
+    "price": "42",
+    "description": "Lampa wisząca, czarny 20cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/brunsta-hemma-lampa-wiszaca-czarny__0669224_pe714900_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/brunsta-hemma-lampa-wiszaca-czarny__0880536_pe616510_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/brunsta-hemma-lampa-wiszaca-czarny__0880533_pe615842_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "IKEA PS 2014",
+    "category": "Lampy",
+    "price": "135",
+    "description": "Lampa wisząca, biały 35cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/ikea-ps-2014-lampa-wiszaca-bialy__0613030_pe686121_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/ikea-ps-2014-lampa-wiszaca-bialy__0881013_pe652941_s5.jpg?f=m",
+      "https://www.ikea.com/pl/pl/images/products/ikea-ps-2014-lampa-wiszaca-bialy__0881010_pe652939_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "TROTTEN",
+    "category": "Biurka",
+    "price": "999",
+    "description": "Biurko z regulacją wysokości, beżowy/antracyt, 160x80 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/trotten-biurko-z-regulacja-wysokosci-bezowy-antracyt__1020760_pe831986_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/trotten-biurko-z-regulacja-wysokosci-bezowy-antracyt__1080648_pe858128_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/trotten-biurko-z-regulacja-wysokosci-bezowy-antracyt__1040267_pe840629_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "MICKE",
+    "category": "Biurka",
+    "price": "699",
+    "description": "Biurko narożne, biały, 100x142 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/micke-biurko-narozne-bialy__0734328_pe739442_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/micke-biurko-narozne-bialy__0921924_pe788003_s5.jpg?f=m",
+      "https://www.ikea.com/pl/pl/images/products/micke-biurko-narozne-bialy__0546702_pe656302_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "ALEX",
+    "category": "Biurka",
+    "price": "799",
+    "description": "Biurko, biały, 132x58 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/alex-biurko-bialy__0977666_pe813729_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/alex-biurko-bialy__0798451_ph165506_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/alex-biurko-bialy__0403182_pe565241_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "UTESPELARE",
+    "category": "Biurka",
+    "price": "599",
+    "description": "Biurko gamingowe, czarny, 160x80 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/utespelare-biurko-gamingowe-czarny__0985179_pe816538_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/utespelare-biurko-gamingowe-czarny__0997777_pe822755_s5.jpg?f=m",
+      "https://www.ikea.com/pl/pl/images/products/utespelare-biurko-gamingowe-czarny__0997502_pe822689_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "MALM",
+    "category": "Biurka",
+    "price": "649",
+    "description": "Biurko z wysuwanym panelem, biały, 151x65 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/malm-biurko-z-wysuwanym-panelem-bialy__0735980_pe740314_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/malm-biurko-z-wysuwanym-panelem-bialy__0798309_ph165496_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/malm-biurko-z-wysuwanym-panelem-bialy__0526928_pe645225_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "PAX / BERGSBO",
+    "category": "Szafy",
+    "price": "1 710",
+    "description": "Cztero drzwiowa szafa w kolorze białym, z drzwiami o kolorze dębu, 200x60x236 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/pax-bergsbo-szafa-bialy-dab-bejcowany-na-bialo__1080579_pe858072_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pax-bergsbo-szafa-bialy-dab-bejcowany-na-bialo__1103863_pe867413_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pax-bergsbo-szafa-bialy-dab-bejcowany-na-bialo__1103861_pe867411_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "22",
+    "name": "BRIMNES",
+    "category": "Szafy",
+    "price": "599",
+    "description": "Mała dwudrzwiowa szafa w kolorze białym, 78x190 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/brimnes-szafa-2-drzwi-bialy__0140624_pe300605_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/brimnes-szafa-2-drzwi-bialy__0746968_pe744294_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/brimnes-szafa-2-drzwi-bialy__0858440_pe679014_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "23",
+    "name": "PAX / GRIMO",
+    "category": "Szafy",
+    "price": "2 760",
+    "description": "Kombinacja małych szafek z przestronną szafą w kolorze białym, z szarymi dzwiami, 200x60x236 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/pax-grimo-kombinacja-szafy-bialy-grimo-szary__0913274_pe783452_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pax-grimo-kombinacja-szafy-bialy-grimo-szary__0855821_pe667903_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pax-grimo-kombinacja-szafy-bialy-grimo-szary__0928469_pe789883_s5.jpg?f=m"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "RAKKESTAD",
+    "category": "Szafy",
+    "price": "799",
+    "description": "Szafa z drzwiami przesuwanymi w kolorze czarnybrąz, 117x176 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/rakkestad-szafa-z-drzwiami-przesuwanymi-czarnybraz__0823992_pe776023_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/rakkestad-szafa-z-drzwiami-przesuwanymi-czarnybraz__0998401_pe823024_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/rakkestad-szafa-z-drzwiami-przesuwanymi-czarnybraz__0823993_pe776024_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "VISTHUS",
+    "category": "Szafy",
+    "price": "1 699",
+    "description": "Szara szafa z wysuwanymi małymi szafkami, z dzwiami w kolorze białym, 122x59x216 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/visthus-szafa-szary-bialy__0625545_pe692344_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/visthus-szafa-szary-bialy__0858537_pe644340_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/visthus-szafa-szary-bialy__0858541_pe644343_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "FÄRGKLAR",
+    "category": "Zastawa Stołowa",
+    "price": "149",
+    "description": "Proste, funkcjonalne wzornictwo zastawy można łatwo dopasować do innych kolorów, kształtów lub różnych rodzajów szkliwa. W zestawie: 8 talerzy (śr. 26 cm), 8 talerzy deserowych (śr. 20 cm) i 8 talerzy głębokich (śr. 23 cm).",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/faergklar-serwis-24-czesci-matowy-jasnoszary__1028004_pe835169_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/faergklar-serwis-24-czesci-z-polyskiem-ciemnoturkusowy__0982328_pe816502_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/faergklar-serwis-24-czesci-matowy-ciemnoszary__1010274_pe828005_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "27",
+    "name": "VÄRDERA",
+    "category": "Zastawa Stołowa",
+    "price": "219",
+    "description": "Seria VÄRDERA sprawdzi się zarówno na co dzień, jak i na przyjęciach, ponieważ jest wykonana z wytrzymałej porcelany skaleniowej. W zestawie: talerz (25x25 cm), talerzyk (18x18 cm) i talerz głęboki (20x20 cm), po 6 szt.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/vaerdera-serwis-18-szt-bialy__0712801_pe729021_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/vaerdera-serwis-18-szt-bialy__0898467_pe609053_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/vaerdera-serwis-18-szt-bialy__0186150_pe172843_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "IKEA 365+",
+    "category": "Zastawa Stołowa",
+    "price": "219",
+    "description": "eria IKEA 365+ ma wszystko, czego potrzeba na stół – podziwiana za swoją codzienną prostotę lub doprawioną kolorami i dodatkami. W zestawie: 6 talerzy (śr. 26 cm), 6 salaterek (śr. 20 cm) i 6 talerzy małych (śr. 23 cm).",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/ikea-365-serwis-18-szt-bialy__0720485_pe732584_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/ikea-365-serwis-18-szt-bialy__0898365_pe635024_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/ikea-365-serwis-18-szt-bialy__0624537_pe691886_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "29",
+    "name": "GODMIDDAG",
+    "category": "Zastawa Stołowa",
+    "price": "199",
+    "description": "Podaruj sobie trochę luksusu za pomocą tej prostej, białej zastawy stołowej – łatwa w użyciu i odpowiednia na każdą okazję. W zestawie: 8 talerzy (śr. 26 cm), 8 talerzy deserowych (śr. 20 cm) i 8 talerzy głębokich (śr. 23 cm).",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/godmiddag-serwis-24-czesci-bialy__1062534_pe850879_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "UPPLAGA",
+    "category": "Zastawa Stołowa",
+    "price": "259",
+    "description": "Lekkość, trwałość i możliwość zmywania w zmywarce sprawiają, że ten serwis to faworyt dnia codziennego. W komplecie: 6 talerzy (28cm), 6 głebokich talerzy (26 cm) i 6talerzy do sałatek (22cm).",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/upplaga-serwis-18-szt-bialy__1130880_pe877954_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/upplaga-serwis-18-szt-bialy__0747074_pe744407_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/upplaga-serwis-18-szt-bialy__0747635_pe744645_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "VESKEN",
+    "category": "Regał",
+    "price": "49",
+    "description": "Zmieści się w najmniejszych łazienkach, ale na półkach jest mnóstwo miejsca na wszystkie przybory toaletowe, od butelek z szamponem po mydło i drobne przedmioty.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/vesken-regal-bialy__0419316_pe576206_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/vesken-regal-bialy__0419320_pe576209_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/vesken-regal-bialy__0419318_pe576207_s5.jpg?f=l"
+    ]
+  },
+  {
+    "id": "32",
+    "name": "BILLY",
+    "category": "Regał",
+    "price": "189",
+    "description": "Szacuje się, że co pięć sekund gdzieś na świecie sprzedaje się jeden regał BILLY. Imponujące, biorąc pod uwagę, że BILLY wprowadziliśmy do sprzedaży w 1979 roku. To wybór miłośników książek, który nigdy nie wychodzi z mody.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/billy-regal-bialy__0644260_pe702536_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/billy-regal-bialy__0394564_pe561387_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/billy-regal-bialy__0367673_ph121198_s5.jpg?f=l"
+    ]
+  },
+  {
+    "id": "33",
+    "name": "KALLAX",
+    "category": "Regał",
+    "price": "199",
+    "description": "Pionowo lub poziomo - seria KALLAX dopasowuje się do gustu, miejsca, potrzeb i budżetu. Gładkie powierzchnie i zaokrąglone narożniki dają poczucie jakości, a regał można spersonalizować za pomocą wkładów i pudełek.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/kallax-regal-bialy__0644757_pe702939_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/kallax-regal-bialy__1051325_pe845148_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/kallax-regal-bialy__1099106_pe865602_s5.jpg?f=l"
+    ]
+  },
+  {
+    "id": "34",
+    "name": "HYLLIS",
+    "category": "Regał",
+    "price": "75",
+    "description": "Ten moduł do przechowywania nadaje się idealnie na doniczki i rośliny ⎼ można go też łatwo przekształcić w szklarnię, jeśli uzupełnisz go pokrowcem HYLLIS.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0639121_pe704408_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0715527_ph156576_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0935751_ph169678_s5.jpg?f=l"
+    ]
+  },
+  {
+    "id": "35",
+    "name": "BAGGEBO",
+    "category": "Regał",
+    "price": "79",
+    "description": "Projekt o czystych liniach, który dopasuje się do istniejącego wystroju lub pozostałych elementów z serii BAGGEBO. Schludny wygląd, z półkami i tylnym panelem z metalu i siatki, podkreśli przechowywane przedmioty.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/baggebo-regal-metal-bialy__0981562_pe815396_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/baggebo-regal-metal-bialy__0981563_pe815398_s5.jpg?f=l",
+      "https://www.ikea.com/pl/pl/images/products/baggebo-regal-metal-bialy__0985041_pe816493_s5.jpg?f=l"
+    ]
+  },
+  {
+    "id": "36",
+    "name": "BROR",
+    "category": "Inne",
+    "price": "599",
+    "description": "Wózek, czarny/sklejka sosnowa",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/bror-wozek-czarny-sklejka-sosnowa__0636685_pe697973_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/bror-wozek-czarny-sklejka-sosnowa__0940661_pe795106_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/bror-wozek-czarny-sklejka-sosnowa__0940899_pe795232_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "37",
+    "name": "SKOGHALL",
+    "category": "Inne",
+    "price": "19",
+    "description": "Hak, samoprzylepny, chrom. Cena za 3 szt. ",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/skoghall-hak-samoprzylepny-chrom__0583461_pe671221_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/skoghall-hak-samoprzylepny-chrom__0157151_pe315578_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/skoghall-hak-samoprzylepny-chrom__0863285_pe616006_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "38",
+    "name": "HULTARP",
+    "category": "Inne",
+    "price": "14",
+    "description": "Hak, czarny, 7 cm. Cena za 5 szt.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hultarp-hak-czarny__0941598_pe795584_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hultarp-hak-czarny__0974967_ph175665_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hultarp-hak-niklowano__0941477_pe795486_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "39",
+    "name": "KNODD",
+    "category": "Inne",
+    "price": "99",
+    "description": "Kosz metalowy z pokrywką, szary, 40 l",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/knodd-kosz-metalowy-z-pokrywka-szary__0711156_pe728024_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/knodd-kosz-metalowy-z-pokrywka-szary__0423623_pe579645_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/knodd-kosz-metalowy-z-pokrywka-szary__1095083_pe863729_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "40",
+    "name": "PAPPIS",
+    "category": "Inne",
+    "price": "5",
+    "description": "Pudełko z pokrywką, brązowy, 25x34x26 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/pappis-pudelko-z-pokrywka-brazowy__0710998_pe727873_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pappis-pudelko-z-pokrywka-brazowy__0675574_ph143993_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/pappis-pudelko-z-pokrywka-brazowy__0938282_pe794009_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "41",
+    "name": "SUNDSVIK",
+    "category": "Baterie kuchenne",
+    "price": "179",
+    "description": "Bateria chromowana. Gwarantowana jakość przetrwa wiele lat nalewania, mycia i płukania.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/sundsvik-bateria-kuchenna-chrom__0756711_pe749051_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/sundsvik-bateria-kuchenna-chrom__0866685_pe603013_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/sundsvik-bateria-kuchenna-chrom__0523244_pe643679_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "42",
+    "name": "JUTTERN",
+    "category": "Baterie kuchenne",
+    "price": "699",
+    "description": "Składana bateria przydaje się, gdy masz w kuchni okno otwierane do wewnątrz. Wystarczy złożyć chromowaną baterię i otworzyć okno do wietrzenia.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/juttern-bateria-kuchenna-skladana-chrom__1042438_pe841387_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/juttern-bateria-kuchenna-skladana-chrom__1095843_pe864057_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/juttern-bateria-kuchenna-skladana-chrom__1054311_pe847677_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "43",
+    "name": "GAMLESJÖN",
+    "category": "Baterie kuchenne",
+    "price": "499",
+    "description": "Rustykalny kran w kolorze czarnym. Wysoka wylewka jest praktyczna do zmywania dużych garnków, a gwarantowana jakość przetrwa wiele lat zmywania i spłukiwania.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/gamlesjoen-bateria-matowy-czarny-metal__0756688_pe749040_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/gamlesjoen-bateria-matowy-czarny-metal__0688406_ph152115_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/gamlesjoen-bateria-matowy-czarny-metal__0553890_pe659585_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "44",
+    "name": "TOLLSJÖN",
+    "category": "Baterie kuchenne",
+    "price": "999",
+    "description": "Czarna bateria. Ręczny prysznic jest przydatny do czyszczenia warzyw, a gwarantowana jakość przetrwa wiele lat zmywania i spłukiwania.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/tollsjoen-bateria-kuchenna-ze-spryskiwaczem-czarny-metal-polerowany__0723024_pe733827_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/tollsjoen-bateria-kuchenna-ze-spryskiwaczem-czarny-metal-polerowany__1138121_pe879842_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/tollsjoen-bateria-kuchenna-ze-spryskiwaczem-czarny-metal-polerowany__0723274_pe733905_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "45",
+    "name": "GLITTRAN",
+    "category": "Baterie kuchenne",
+    "price": "499",
+    "description": "Tradycyjny kran w kolorze czarnym pomaga obniżyć zużycie wody i energii.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/glittran-bateria-kuchenna-czarny__0831970_pe777539_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/glittran-bateria-kuchenna-czarny__0759273_pe766424_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/glittran-bateria-kuchenna-czarny__0523232_pe643674_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "46",
+    "name": "FORSÅ",
+    "category": "lampy",
+    "price": "74",
+    "description": "Klasyczna lampa biurkowa ze stali, która rozjaśni Twój dzień. Ramię i klosz są regulowane, dzięki czemu nadaje się doskonale do czytania przy biurku, w łóżku lub na kanapie.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/forsa-lampa-biurkowa-czarny__0609293_pe684430_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/forsa-lampa-biurkowa-czarny__0166286_pe309442_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/forsa-lampa-biurkowa-czarny__0880532_pe614445_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "47",
+    "name": "SOLKLINT",
+    "category": "lampy",
+    "price": "60",
+    "description": "Jak małe klejnoty lampy SOLKLINT z błyszczącego mosiądzu i szarego, przezroczystego szkła, emitują delikatne, nastrojowe światło, które tworzy ekscytujące cienie na ścianach i sufitach - wszędzie tam, gdzie zechcesz je postawić.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__0842257_pe781832_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__1061774_ph179365_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__0842259_pe781833_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "48",
+    "name": "ENRUM",
+    "category": "lampy",
+    "price": "40",
+    "description": "Latarenki zawsze podkreślają wystrój domu - a gdy na zewnątrz robi się ciemno, ich blask tworzy przytulną atmosferę. Dom wydaje się ciepły, goście czują, że są mile widziani, a każda chwilazyskuje romantyczny akcent.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/enrum-latarenka-na-swiece-brylowa-wew-zew-gleboki-zielony__1081112_pe858246_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/enrum-latarenka-na-swiece-brylowa-wew-zew-gleboki-zielony__1081111_pe858247_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/enrum-latarenka-na-swiece-brylowa-wew-zew-gleboki-zielony__1081109_pe858245_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "49",
+    "name": "VIDJA",
+    "category": "lampy",
+    "price": "152",
+    "description": "Dekoracyjna lampa podłogowa, która emituje w pomieszczeniu delikatne i ciepłe światło przez biały klosz z tkaniny w kształcie tuby. Równie ładnie wygląda w salonie, jak w przedpokoju czy sypialni tworząc przytulną atmosferę.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/vidja-lampa-podlogowa-bialy__0606512_pe682388_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/vidja-lampa-podlogowa-bialy__0953648_pe802865_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/vidja-lampa-podlogowa-bialy__0879632_pe611371_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "50",
+    "name": "FELSISK",
+    "category": "lampy",
+    "price": "109",
+    "description": "Szukasz zgrabnej lampy w nowoczesnym stylu? Ta lampa wisząca o geometrycznym, otwartym kształcie to doskonały wybór. Wystarczy po prostu dodać ulubioną żarówkę dekoracyjną.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/felsisk-lampa-wiszaca-czarny__0988560_pe818155_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/felsisk-lampa-wiszaca-czarny__0988561_pe818157_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/felsisk-lampa-wiszaca-czarny__0988562_pe818156_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "51",
+    "name": "FREDDE",
+    "category": "Inne",
+    "price": "999",
+    "description": "\"Stacja robocza, która za zapewniać wygodę podczas pracy. (Mieści do dwóch płaskich ekranów 24\"\".)\"",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/fredde-biurko-gamingowe-czarny__0736008_pe740351_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/fredde-biurko-gamingowe-czarny__0985566_ph170052_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/fredde-biurko-gamingowe-czarny__0798226_ph165599_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "52",
+    "name": "ESSUNGA",
+    "category": "Inne",
+    "price": "29,99",
+    "description": "Dekoracja ścienna, pies, 40x32 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/essunga-dekoracja-scienna-pies__0792557_pe764758_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "53",
+    "name": "RÖNNSKÄR",
+    "category": "Inne",
+    "price": "149",
+    "description": "Regał czarny, 42x103cm.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/roennskaer-regal-czarny__0721632_pe733305_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/roennskaer-regal-czarny__0379913_pe554955_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/roennskaer-regal-czarny__0863526_pe555865_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "54",
+    "name": "HYLLIS",
+    "category": "Inne",
+    "price": "75",
+    "description": "",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0639121_pe704408_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0715527_ph156576_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "55",
+    "name": "PJÄTTERYD",
+    "category": "Inne",
+    "price": "199",
+    "description": "Obraz, 3 szt., start, 182x118 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/pjaetteryd-obraz-3-szt-start__1018976_pe831234_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "56",
+    "name": "BROGRUND",
+    "category": "Bateria umywalkowa",
+    "price": "450",
+    "description": "Za każdym razem, gdy podnosisz dźwignię, oszczędzasz ciepłą wodę i energię. Funkcja zimnego startu pozwala uniknąć niepotrzebnego używania gorącej wody do codziennych czynności, takich jak mycie rąk lub mycie zębów.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/brogrund-bateria-umywalkowa-wysoka-chrom__0863969_pe721800_s5.jpg?f=xl",
+      "http://ikea.com/pl/pl/images/products/brogrund-bateria-umywalkowa-wysoka-chrom__0755158_pe748286_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "57",
+    "name": "DALSKÄR",
+    "category": "Bateria umywalkowa",
+    "price": "300",
+    "description": "Za każdym razem, gdy podnosisz dźwignię, oszczędzasz ciepłą wodę i energię. Funkcja zimnego startu pozwala uniknąć niepotrzebnego używania gorącej wody do codziennych czynności, takich jak mycie rąk lub mycie zębów.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/dalskaer-bateria-z-odplywem-chrom__0755160_pe748287_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/dalskaer-bateria-z-odplywem-chrom__0645017_ph135725_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/dalskaer-bateria-z-odplywem-chrom__0795565_pe766419_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Cavally L",
+    "category": "Bateria umywalkowa",
+    "price": "298",
+    "description": "Bateria umywalkowa GoodHome Cavally L czarna jest produktem przeznaczonym do montażu przy umywalce w łazience. To bateria stojąca wykonana z materiału odpornego na korozję.",
+    "photos": [
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_GoodHome_Cavally_L_czarna-523154-653740.webp"
+    ]
+  },
+  {
+    "id": "59",
+    "name": "My Sport XL",
+    "category": "Bateria umywalkowa",
+    "price": "498",
+    "description": "Bateria umywalkowa Hansgrohe wysoka My Sport XL to przede wszystkim połączenie jakości i elegancji. Powierzchnia korpusu jest wyższa niż w innych modelach tej serii.",
+    "photos": [
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_wysoka_Hansgrohe_My_Sport_XL-521549-498865.webp",
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_wysoka_Hansgrohe_My_Sport_XL-521549-605435.webp",
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_wysoka_Hansgrohe_My_Sport_XL-521549-498874.webp"
+    ]
+  },
+  {
+    "id": "60",
+    "name": "Salaman",
+    "category": "Bateria umywalkowa",
+    "price": "248",
+    "description": "Bateria umywalkowa z kolekcji Salaman zapewnia komfort użytkowania i bezawaryjną pracę. Produkt został wykonany z materiałów wykończonych elegancką powłoką chromu, dzięki czemu prezentuje się stylowo i elegancko.",
+    "photos": [
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_Salaman_chrom-502666-207850.webp",
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_Salaman_chrom-502666-444628.webp",
+      "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_Salaman_chrom-502666-347479.webp"
+    ]
+  },
+  {
+    "id": "61",
+    "name": "BERGENES",
+    "category": "Akcesoria biurowe",
+    "price": "4,99",
+    "description": "Uchwyt na komórkę/tablet, bambus. Pasuje do większości telefonów komórkowych i tabletów dzięki 2 szczelinom o różnej szerokości.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/bergenes-uchwyt-na-komorke-tablet-bambus__0730164_pe737412_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/bergenes-uchwyt-na-komorke-tablet-bambus__0730866_pe737824_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/bergenes-uchwyt-na-komorke-tablet-bambus__0939034_pe794389_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "62",
+    "name": "MOPPE",
+    "category": "Akcesoria biurowe",
+    "price": "99,99",
+    "description": "Minikomoda, sklejka brzozowa. Pomaga uporządkować wszystko począwszy od dokumentów, pendrive'ów i ładowarek po kosmetyki i akcesoria.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/moppe-minikomoda-sklejka-brzozowa__0135959_pe292948_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/moppe-minikomoda-sklejka-brzozowa__0681265_ph149189_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/moppe-minikomoda-sklejka-brzozowa__0938104_pe793935_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "63",
+    "name": "SUSIG",
+    "category": "Akcesoria biurowe",
+    "price": "29,99",
+    "description": "Podkładka na biurko, korek. Korokowa nakładka chroni biurkoi tłumi dźwięki, wnosząc jednocześnie ciepły i naturalny akcent. 45x65 cm",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/susig-podkladka-na-biurko-korek__0746243_pe743903_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/susig-podkladka-na-biurko-korek__0746242_pe743904_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/susig-podkladka-na-biurko-korek__0746241_pe743902_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "64",
+    "name": "ÖVNING",
+    "category": "Akcesoria biurowe",
+    "price": "59,99",
+    "description": "elofunkcyjny podnóżek, który pomaga siedzeić przy biurku w dobrej pozycji do pracy. Stopy mają stabilne wsparcie, które zmniejsza nacisk na uda i przyczynia się do lepszego krążenia krwi.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/oevning-wielofunkc-podnozek-ergonomiczny__0957751_pe805114_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/oevning-wielofunkc-podnozek-ergonomiczny__0947533_pe798592_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/oevning-wielofunkc-podnozek-ergonomiczny__0959768_pe806183_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "65",
+    "name": "LÅNESPELARE ",
+    "category": "Akcesoria biurowe",
+    "price": "99,99",
+    "description": "Stojak na akcesoria. Można pomalować surowe drewno na dowolny kolor, aby nadać podstawce bardziej osobisty charakter.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/lanespelare-stojak-na-akcesoria__0974868_pe812565_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/lanespelare-stojak-na-akcesoria__1083065_pe858960_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/lanespelare-stojak-na-akcesoria__0984809_pe816415_s5.jpg?f=m"
+    ]
+  },
+  {
+    "id": "66",
+    "name": "REGISSÖR",
+    "category": "Inne",
+    "price": "2599",
+    "description": "Klasyczna szafka z przeszklonymi drzwiami z dużą ilością miejsca do przechywowania.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/regissoer-witryna-brazowy__0547956_pe656946_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/regissoer-witryna-brazowy__0849587_pe615648_s5.jpg"
+    ]
+  },
+  {
+    "id": "67",
+    "name": "IDANÄS",
+    "category": "Inne",
+    "price": "3299",
+    "description": "Dwuosobowe łóżko z miękką tapicerką wykończone ponadczasowymi guzikami.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/idanaes-lozko-z-pojemnikiem-gunnared-ciemnoszary__1079020_pe857413_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/idanaes-lozko-z-pojemnikiem-gunnared-ciemnoszary__1079020_pe857413_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/idanaes-lozko-z-pojemnikiem-gunnared-ciemnoszary__1079014_pe857431_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/idanaes-lozko-z-pojemnikiem-gunnared-ciemnoszary__1017103_pe830726_s5.jpg"
+    ]
+  },
+  {
+    "id": "68",
+    "name": "UPPSPEL",
+    "category": "Inne",
+    "price": "3398",
+    "description": "Gamingowe biurko o wymiarach 80 cm x 140 cm.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/uppspel-biurko-gamingowe-czarny__1039776_pe840448_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/uppspel-biurko-gamingowe-czarny__1039810_pe840456_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/uppspel-biurko-gamingowe-czarny__0997867_pe822842_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/uppspel-biurko-gamingowe-czarny__1027023_pe834675_s5.jpg"
+    ]
+  },
+  {
+    "id": "69",
+    "name": "IKEA 365+ VÄRDEFULL",
+    "category": "Inne",
+    "price": "29,99",
+    "description": "Klasyczny, dobrze wykonany tłuczek do mięsa.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/ikea-365-vaerdefull-tluczek-do-miesa-czarny__0713048_pe729227_s5.jpg",
+      "https://www.ikea.com/pl/pl/images/products/ikea-365-vaerdefull-tluczek-do-miesa-czarny__0247023_pe385977_s5.jpg"
+    ]
+  },
+  {
+    "id": "70",
+    "name": "TRÅDFRI",
+    "category": "Inne",
+    "price": "49,99",
+    "description": "Żarówka led z dostosowania jasności do własnych potrzeb",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/tradfri-zarowka-led-e27-250-lumenow-smart-bezprzewodowy-przyciemniany-cieply-bialy-kula__0842258_pe781834_s5.jpg?f=xxs",
+      "https://www.ikea.com/pl/pl/images/products/tradfri-zarowka-led-e27-250-lumenow-smart-bezprzewodowy-przyciemniany-cieply-bialy-kula__0806534_pe769986_s5.jpg?f=xxs"
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Kominek Elektryczny Winslow 1600W Dimplex",
+    "category": "Inne",
+    "price": "1199",
+    "description": "Kominek elektryczny z nowoczesnym, szklanym designem",
+    "photos": [
+      "https://static01.leroymerlin.pl/files/media/image/589/2870589/product/kominek-elektryczny-winslow-1600-w-dimplex,main.jpg"
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Glebogryzarka spalinowa Handy NG86L 3,8kW 196cm3",
+    "category": "Inne",
+    "price": "1499",
+    "description": "Glebogryzarka spalinowa Handy NG86L jest urządzeniem zapewniającym skuteczne spulchnianie gleby oraz jej kultywację przy pomocy noży.",
+    "photos": [
+      "https://static01.leroymerlin.pl/files/media/image/363/2793363/product/glebogryzarka-spalinowa-handy-ng86l-3-8kw-196cm3,main.jpg",
+      "https://static02.leroymerlin.pl/files/media/image/978/2855978/product/glebogryzarka-spalinowa-handy-ng86l-3-8kw-196cm3,main.jpg",
+      "https://static02.leroymerlin.pl/files/media/image/979/2855979/product/glebogryzarka-spalinowa-handy-ng86l-3-8kw-196cm3,main.jpg"
+    ]
+  },
+  {
+    "id": "73",
+    "name": "Ręczna przecinarka do płytek ceramicznych MGŁ 600mm WALMER",
+    "category": "Inne",
+    "price": "219",
+    "description": "Ręczna przecinarka do glazury o prowadnicy na łożyskach rolkowych znacząco ułatwia remont łazienki i innych pomieszczeń.",
+    "photos": [
+      "https://static02.leroymerlin.pl/files/media/image/034/1410034/product/reczna-przecinarka-do-plytek-ceramicznych-mgl-600-mm-walmer,main.jpg",
+      "https://static02.leroymerlin.pl/files/media/image/927/2509927/product/reczna-przecinarka-do-plytek-ceramicznych-mgl-600-mm-walmer,main.jpg"
+    ]
+  },
+  {
+    "id": "74",
+    "name": "\"Kolanko 90° KW 1\"\" - KW 1\"\" USTM\"",
+    "category": "Inne",
+    "price": "5,25",
+    "description": "Kolanko PVC o zagięciu 90 stopni i średnicy 1 cala.",
+    "photos": [
+      "https://static02.leroymerlin.pl/files/media/image/657/1348657/product/kolanko-90-kw-1-kw-1-ustm,main.jpg"
+    ]
+  },
+  {
+    "id": "75",
+    "name": "Żyrandol Maria Teresa złoty E14 Candellux",
+    "category": "Inne",
+    "price": "3399",
+    "description": "Dostojny i wyszukany design, ekskluzywne połączenie metalu i tworzywa i kryształu.",
+    "photos": [
+      "https://static01.leroymerlin.pl/files/media/image/298/1955298/product/zyrandol-maria-teresa-zloty-e14-candellux,main.jpg",
+      "https://static01.leroymerlin.pl/files/media/image/298/1955298/product/zyrandol-maria-teresa-zloty-e14-candellux,main.jpg"
+    ]
+  },
+  {
+    "id": "76",
+    "name": "FJALLBO",
+    "category": "Meble RTV",
+    "price": "699",
+    "description": "Ponieważ drzwiczki przepuszczają sygnały z pilotów zdalnego sterowania, Twój sprzęt elektroniczny polubi FJÄLLBO. Ty prawdopodobnie też – otwarty tył ułatwia zarządzanie kablami.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/fjaellbo-szafka-pod-tv-czarny__0850235_pe616397_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/fjaellbo-szafka-pod-tv-czarny__0473390_pe614545_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "77",
+    "name": "RANNAS",
+    "category": "Meble RTV",
+    "price": "1 899",
+    "description": "Matowa i przyjemna w dotyku powierzchnia, smukłe linie i stylowe uchwyty. Szafka pod telewizor RANNÄS dzięki przemyślanym detalom i wyrafinowanemu wyglądowi może stać się prawdziwą ozdobą w Twoim domu.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/rannaes-lawa-tv-z-drzwiami-czarny-czarny-szklo__1044521_pe842205_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/rannaes-lawa-tv-z-drzwiami-czarny-czarny-szklo__1044087_pe841894_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "78",
+    "name": "BESTA",
+    "category": "Meble RTV",
+    "price": "656",
+    "description": "Szafka TV zawieszona na ścianie tworzy elegancki, przestronny wystrój, nie ma też nóżek, które przeszkadzają podczas odkurzania podłogi.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/besta-lawa-tv-z-drzwiami-bialy-lappviken-bialy__0723576_pe734034_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/besta-lawa-tv-z-drzwiami-bialy-lappviken-bialy__0995907_pe821962_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "79",
+    "name": "HEMNES",
+    "category": "Meble RTV",
+    "price": "1299",
+    "description": "Lita sosna ze zrównoważonych upraw, naturalnego i odnawialnego materiału, który z każdym rokiem wygląda coraz piękniej. Podoba się? Połacz z innymi produktami z serii HEMNES.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hemnes-szafka-pod-tv-biala-bejca-jasnobrazowy__0583377_pe671187_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/hemnes-szafka-pod-tv-biala-bejca-jasnobrazowy__0850139_pe671188_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "80",
+    "name": "LACK",
+    "category": "Meble RTV",
+    "price": "59",
+    "description": "Szafka LACK pod TV łatwo dopasuje się do innych mebli. Dzięki unikalnej konstrukcji jest łatwa w montażu, lekka i ustawna - a my możemy obniżyć ceny, co poprawi Twój nastrój.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/lack-szafka-pod-tv-bialy__0625061_pe692088_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/lack-szafka-pod-tv-bialy__0849958_pe562005_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "81",
+    "name": "NORDLI",
+    "category": "Inne",
+    "price": "2229",
+    "description": "Możesz użyć jednej komody modułowej lub połączyć kilka i uzyskać rozwiązanie do przechowywania, które idealnie dopasuje się do Twojej przestrzeni. Można w prosty sposób stworzyć swój własny, osobisty projekt, łącząc komody w różnych kolorach.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/nordli-komoda-12-szuflad-bialy__0555292_pe660387_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/nordli-komoda-12-szuflad-bialy__0857997_pe660474_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/nordli-komoda-12-szuflad-bialy__0555292_pe660387_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "82",
+    "name": "SKURUP",
+    "category": "Inne",
+    "price": "110",
+    "description": "W prosty sposób możesz skierować światło w różne miejsca, ponieważ każdy reflektor można regulować indywidualnie.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/skurup-lampa-sufitowa-3-reflektory-czarny__0751053_pe746892_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/skurup-lampa-sufitowa-3-reflektory-czarny__0751052_pe746893_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/skurup-lampa-sufitowa-3-reflektory-czarny__0751051_pe746891_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "83",
+    "name": "NORDKISA",
+    "category": "Inne",
+    "price": "1499",
+    "description": "Ta szafa inspirowana jest klasycznymi skandynawskimi meblami o czystym i przewiewnym wzornictwie. Służy do przechowywania ubrań i rzeczy osobistych, będzie przyciągać wzrok w Twoim domu.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/nordkisa-szafa-otwarta-z-przesuw-drzwiami-bambus__0756084_pe748766_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/nordkisa-szafa-otwarta-z-przesuw-drzwiami-bambus__0813677_ph165857_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/nordkisa-szafa-otwarta-z-przesuw-drzwiami-bambus__0813688_ph165568_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "84",
+    "name": "BUMERANG",
+    "category": "Inne",
+    "price": "19",
+    "description": "Wygodne, lekkie i łatwe do przemieszczania. Kształt podłokietników podnosi komfort, a mechanizm hamujący kółka utrzymuje krzesło w miejscu, gdy wstajesz, a zwalnia się, gdy siadasz.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/bumerang-wieszak-naturalny__0710666_pe727700_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/bumerang-wieszak-naturalny__0910725_pe561954_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/bumerang-wieszak-naturalny__1090678_pe862141_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "85",
+    "name": "HAUGA",
+    "category": "Inne",
+    "price": "699",
+    "description": "Charakterystyczna górna półka jest cechą wspólną dla całej serii HAUGA i nadaje jej tradycyjny styl. Niezależnie od tego, czy wykorzystasz ją na czapki, pudełka czy dekoracje, krawędź półki utrzyma rzeczy na swoim miejscu.Powiększ miejsce do przechowywania i stwórz skoordynowany wygląd, budując własną kombinację do przechowywania HAUGA.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/hauga-komoda-3-szuflady-szary__0931906_pe791296_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hauga-komoda-3-szuflady-szary__0948144_pe798882_s5.jpg?f=xl",
+      "https://www.ikea.com/pl/pl/images/products/hauga-komoda-3-szuflady-szary__0898775_pe782646_s5.jpg?f=xl"
+    ]
+  },
+  {
+    "id": "86",
+    "name": "STRALA liść zielony",
+    "category": "Ozdoby świąteczne",
+    "price": "20",
+    "description": "Stwórz własną spersonalizowaną lampę wiszącą, łącząc abażur z oprawą oświetleniową STRÅLA lub podstawą.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-lisc-zielony__0954579_pe803386_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-lisc-zielony__0954581_pe803388_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-lisc-zielony__0954580_pe803387_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "87",
+    "name": "STRALA śnieżynka",
+    "category": "Ozdoby świąteczne",
+    "price": "20",
+    "description": "Daje ciepły, przytulny blask i tworzy miłą atmosfera w domu",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-sniezynki__0986956_pe817424_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-sniezynki__0954519_pe803362_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-klosz-sniezynki__0954519_pe803362_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "88",
+    "name": "Girlanda LED",
+    "category": "Ozdoby świąteczne",
+    "price": "50",
+    "description": "Dzięki małym diodom i pozłacanym liściom ten łańcuch świetlny LED na baterie rzuca przytulne światło, które sprawi, że stół w jadalni i dom będą błyszczeć.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/strala-girlanda-led-40-lampek-na-baterie-lisc-zloty-kolor__1088600_pe861256_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-girlanda-led-40-lampek-na-baterie-lisc-zloty-kolor__0954478_pe803332_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/strala-girlanda-led-40-lampek-na-baterie-lisc-zloty-kolor__0954479_pe803333_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "89",
+    "name": "BLÖTSNÖ",
+    "category": "Ozdoby świąteczne",
+    "price": "100",
+    "description": "Tworzy w pokoju delikatny, przytulny nastrój.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/bloetsnoe-girlanda-led-24-lampki-do-wnetrz-czarny__0597216_pe677035_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/bloetsnoe-girlanda-led-24-lampki-do-wnetrz-czarny__0884789_pe717319_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/bloetsnoe-girlanda-led-24-lampki-do-wnetrz-czarny__0884777_pe677034_s5.jpg?f=s"
+    ]
+  },
+  {
+    "id": "90",
+    "name": "SOLVINDEN",
+    "category": "Ozdoby świąteczne",
+    "price": "50",
+    "description": "Łańcuchy świetlne są idealne, gdy chcesz stworzyć miłą atmosferę. Łatwe do połączenia z innymi lampami z serii SOLVINDEN, aby rozprowadzać przytulne światło na balkonie, tarasie czy w ogrodzie.",
+    "photos": [
+      "https://www.ikea.com/pl/pl/images/products/solvinden-girlanda-led-12-lampek-zewnetrzne-na-baterie-bialy__0939852_pe794693_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/solvinden-girlanda-led-12-lampek-zewnetrzne-na-baterie-bialy__0931568_pe793862_s5.jpg?f=s",
+      "https://www.ikea.com/pl/pl/images/products/solvinden-girlanda-led-12-lampek-zewnetrzne-na-baterie-bialy__0884088_pe696570_s5.jpg?f=s"
+    ]
+  }
+]
