@@ -2,13 +2,28 @@ POST http://localhost:3000/v1/products/create
 Content-Type: application/json
 
 {
-  "name": "Product 1",
-  "description": "Product 1 description",
-  "price": 100,
-  "quantity": 10,
-  "photos": [
-    "https://example.com/photo1.jpg",
-    "https://example.com/photo2.jpg"
-  ],
-  "category": "5f1b0b9b0b9b0b9b0b9b0b9b"
+  "apiKey": "3f493126-dd40-442b-9cd9-4bd9883379ac",
+  "product": {
+    "name": "Product 1",
+    "description": "Product 1 description",
+    "price": 100,
+    "quantity": 10,
+    "photos": [
+      "https://example.com/photo1.jpg",
+      "https://example.com/photo2.jpg"
+    ],
+    "category": "d64ab0a5-8af4-4aee-a6ea-fee7c5e0076a"
+  }
 }
+
+###
+POST http://localhost:3000/v1/categories/create
+Content-Type: application/json
+
+{
+  "apiKey": "3f493126-dd40-442b-9cd9-4bd9883379ac",
+  "category": {
+    "name": "Category"
+  }
+}
+

@@ -2,24 +2,24 @@ import { Get, Middleware, Post, Router } from '@discordx/koa'
 import type { Context } from 'koa'
 import { koaBody } from 'koa-body'
 import { StatusCodes } from 'http-status-codes'
-import { BaseProduct, ProductCreationError, ProductManager } from '../../ProductManager.js'
+import { BaseCategory, CategoryCreationError, CategoryManager } from '../../CategoryManager.js'
 import { UUID } from '../../types/UUID.js'
 import APIKeyCheck from '../../APIKeyCheck.js'
 
 @Router()
 export class ProductsV1 {
-  @Get('/v1/products')
-  products (context: Context): void {
+  @Get('/v1/categories')
+  categories (context: Context): void {
     context.body = JSON.stringify({
       status: 'success',
-      message: 'Products endpoint',
+      message: 'Categories endpoint',
     })
   }
 
-  @Get('/v1/products/get/:uuid')
+  @Get('/v1/categories/get/:uuid')
   async get (context: Context): Promise<void> {
-    const product = await ProductManager.getProduct(context.params.uuid)
-    if (!product) {
+    const category = await CategoryManager.getCategory(context.params.uuid)
+    if (!category) {
       context.status = StatusCodes.NOT_FOUND
       context.body = JSON.stringify({
         status: 'error',
@@ -29,45 +29,45 @@ export class ProductsV1 {
     } else {
       context.body = JSON.stringify({
         status: 'success',
-        product: product,
+        category: category,
       })
       return
     }
   }
 
-  @Get('/v1/products/getAll')
+  @Get('/v1/categories/getAll')
   async getAll (context: Context): Promise<void> {
-    const products = await ProductManager.getAllProducts()
-    if (products.length === 0) {
+    const categories = await CategoryManager.getAllCategories()
+    if (categories.length === 0) {
       context.status = StatusCodes.NOT_FOUND
       context.body = JSON.stringify({
         status: 'error',
-        message: 'Products not found',
+        message: 'Categories not found',
       })
       return
     } else {
       context.body = JSON.stringify({
         status: 'success',
-        products: products,
+        categories: categories,
       })
       return
     }
   }
 
-  @Post('/v1/products/create')
+  @Post('/v1/categories/create')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
   async create (context: Context): Promise<void> {
     try {
-      const product: BaseProduct = context.request.body.product
-      const productCreated = await ProductManager.createProduct(product)
+      const category: BaseCategory = context.request.body.category
+      const categoryCreated = await CategoryManager.createCategory(category)
       context.body = JSON.stringify({
         status: 'success',
-        product: productCreated,
+        category: categoryCreated,
       }, null, 2)
       return
     } catch (error) {
-      if (error instanceof ProductCreationError) {
+      if (error instanceof CategoryCreationError) {
         context.status = StatusCodes.BAD_REQUEST
         context.body = JSON.stringify({
           status: 'error',
@@ -85,16 +85,16 @@ export class ProductsV1 {
     }
   }
 
-  @Post('/v1/products/delete')
+  @Post('/v1/categories/delete')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
   async delete (context: Context): Promise<void> {
     try {
       const uuid: UUID = context.request.body.uuid
-      const productDeleted = await ProductManager.deleteProduct(uuid)
+      const categoryDeleted = await CategoryManager.deleteCategory(uuid)
       context.body = JSON.stringify({
-        status: productDeleted ? 'success' : 'error',
-        message: productDeleted ? 'Product deleted' : 'Product not found',
+        status: categoryDeleted ? 'success' : 'error',
+        message: categoryDeleted ? 'Category deleted' : 'Category not found',
       }, null, 2)
       return
     } catch (error) {

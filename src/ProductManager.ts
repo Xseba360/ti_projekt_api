@@ -47,8 +47,6 @@ export class ProductManager {
   }
 
   static async createProduct (product: BaseProduct): Promise<Product> {
-    const db = await SQLiteManager.getDb()
-
     if (!product.name) {
       throw new ProductCreationError('Product name is required')
     }
@@ -64,6 +62,8 @@ export class ProductManager {
     if (!product.category) {
       throw new ProductCreationError('Product category is required')
     }
+
+    const db = await SQLiteManager.getDb()
     const uuid = crypto.randomUUID()
 
     const result = await db.run(`
@@ -98,20 +98,50 @@ export class ProductManager {
       throw new ProductUpdateError('Product not found')
     }
     const db = await SQLiteManager.getDb()
-    for (const prop in propsToUpdate) {
-      if (propsToUpdate.hasOwnProperty(prop)) {
-        if (product[prop as keyof BaseProduct] !== propsToUpdate[prop as keyof BaseProduct]) {
-          // todo: continue working here
-        }
-      }
+    let props: (keyof Product)[] = []
+    if (propsToUpdate.name) {
+      props.push('name')
+      product.name = propsToUpdate.name
     }
-    return { // todo: return updated product
-      category: '', description: '', name: '', photos: [], price: 0, uuid: ''
+    if (propsToUpdate.description) {
+      props.push('description')
+      product.description = propsToUpdate.description
     }
+    if (propsToUpdate.price) {
+      props.push('price')
+      product.price = propsToUpdate.price
+    }
+    if (propsToUpdate.photos) {
+      props.push('photos')
+      product.photos = propsToUpdate.photos
+    }
+    if (propsToUpdate.category) {
+      props.push('category')
+      product.category = propsToUpdate.category
+    }
+    if (props.length <= 0) {
+      throw new ProductUpdateError('No properties to update')
+    }
+    const result = await db.run(`
+                UPDATE products
+                SET ${props.join(' = ?, ') + ' = ?'}
+                WHERE uuid = ?`,
+      [
+        ...props.map(prop => product[prop]),
+        uuid,
+      ])
+
+    if (typeof result.changes !== 'number' || result.changes <= 0) {
+      throw new ProductUpdateError('Product update failed')
+    }
+
+    return product
   }
 
-  static async deleteProduct (uuid: UUID): Promise<void> {
-    // todo: implement
+  static async deleteProduct (uuid: UUID): Promise<boolean> {
+    const db = await SQLiteManager.getDb()
+    const result = await db.run('DELETE FROM products WHERE uuid = ?', [uuid])
+    return typeof result.changes === 'number' && result.changes > 0
   }
 
 }
