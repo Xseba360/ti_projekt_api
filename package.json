@@ -6,7 +6,7 @@
   "type": "module",
   "main": "build/main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "build:changelog": "npx @discordx/changelog --root=src",
     "dev": "ts-node-esm src/main.ts",
     "start": "node build/main.js",
