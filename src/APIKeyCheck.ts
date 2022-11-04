@@ -12,6 +12,6 @@ export default class APIKeyCheck {
       })
       return
     }
-    await next();
+    await next()
   }
 }

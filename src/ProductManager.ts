@@ -143,5 +143,4 @@ export class ProductManager {
     const result = await db.run('DELETE FROM products WHERE uuid = ?', [uuid])
     return typeof result.changes === 'number' && result.changes > 0
   }
-
 }
