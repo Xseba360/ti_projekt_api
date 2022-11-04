@@ -33,7 +33,7 @@ export class CategoryManager {
 
   static async getAllCategories (): Promise<Category[]> {
     const db = await SQLiteManager.getDb()
-    return await db.all('SELECT * FROM products', [])
+    return await db.all('SELECT * FROM categories', [])
   }
 
   static async createCategory (category: BaseCategory): Promise<Category> {

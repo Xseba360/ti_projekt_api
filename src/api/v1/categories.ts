@@ -2,7 +2,13 @@ import { Get, Middleware, Post, Router } from '@discordx/koa'
 import type { Context } from 'koa'
 import { koaBody } from 'koa-body'
 import { StatusCodes } from 'http-status-codes'
-import { BaseCategory, CategoryCreationError, CategoryManager } from '../../CategoryManager.js'
+import {
+  BaseCategory,
+  Category,
+  CategoryCreationError,
+  CategoryManager,
+  CategoryUpdateError
+} from '../../CategoryManager.js'
 import { UUID } from '../../types/UUID.js'
 import APIKeyCheck from '../../APIKeyCheck.js'
 
@@ -68,6 +74,37 @@ export class ProductsV1 {
       return
     } catch (error) {
       if (error instanceof CategoryCreationError) {
+        context.status = StatusCodes.BAD_REQUEST
+        context.body = JSON.stringify({
+          status: 'error',
+          message: error.message,
+        })
+        return
+      } else {
+        context.status = StatusCodes.INTERNAL_SERVER_ERROR
+        context.body = JSON.stringify({
+          status: 'error',
+          message: error instanceof Error ? `ISE: ${error.message}` : 'Internal server error',
+        })
+        return
+      }
+    }
+  }
+
+  @Post('/v1/categories/update')
+  @Middleware(APIKeyCheck.check)
+  @Middleware(koaBody())
+  async update (context: Context): Promise<void> {
+    try {
+      const category: Partial<Category> & Pick<Category, 'uuid'> = context.request.body.category
+      const categoryUpdated = await CategoryManager.updateCategory(category.uuid, category)
+      context.body = JSON.stringify({
+        status: 'success',
+        category: categoryUpdated,
+      }, null, 2)
+      return
+    } catch (error) {
+      if (error instanceof CategoryUpdateError) {
         context.status = StatusCodes.BAD_REQUEST
         context.body = JSON.stringify({
           status: 'error',

@@ -2,7 +2,7 @@ import { Get, Middleware, Post, Router } from '@discordx/koa'
 import type { Context } from 'koa'
 import { koaBody } from 'koa-body'
 import { StatusCodes } from 'http-status-codes'
-import { BaseProduct, ProductCreationError, ProductManager } from '../../ProductManager.js'
+import { BaseProduct, Product, ProductCreationError, ProductManager, ProductUpdateError } from '../../ProductManager.js'
 import { UUID } from '../../types/UUID.js'
 import APIKeyCheck from '../../APIKeyCheck.js'
 
@@ -68,6 +68,37 @@ export class ProductsV1 {
       return
     } catch (error) {
       if (error instanceof ProductCreationError) {
+        context.status = StatusCodes.BAD_REQUEST
+        context.body = JSON.stringify({
+          status: 'error',
+          message: error.message,
+        })
+        return
+      } else {
+        context.status = StatusCodes.INTERNAL_SERVER_ERROR
+        context.body = JSON.stringify({
+          status: 'error',
+          message: error instanceof Error ? `ISE: ${error.message}` : 'Internal server error',
+        })
+        return
+      }
+    }
+  }
+
+  @Post('/v1/products/update')
+  @Middleware(APIKeyCheck.check)
+  @Middleware(koaBody())
+  async update (context: Context): Promise<void> {
+    try {
+      const product: Partial<Product> & Pick<Product, 'uuid'> = context.request.body.product
+      const productUpdated = await ProductManager.updateProduct(product.uuid, product)
+      context.body = JSON.stringify({
+        status: 'success',
+        product: productUpdated,
+      }, null, 2)
+      return
+    } catch (error) {
+      if (error instanceof ProductUpdateError) {
         context.status = StatusCodes.BAD_REQUEST
         context.body = JSON.stringify({
           status: 'error',
