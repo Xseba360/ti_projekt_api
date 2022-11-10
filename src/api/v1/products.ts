@@ -8,7 +8,7 @@ import APIKeyCheck from '../../APIKeyCheck.js'
 
 @Router()
 export class ProductsV1 {
-  @Get('/v1/products')
+  @Get('/api/v1/products')
   products (context: Context): void {
     context.body = JSON.stringify({
       status: 'success',
@@ -16,8 +16,26 @@ export class ProductsV1 {
     })
   }
 
-  @Get('/v1/products/get/:uuid')
+  @Get('/api/v1/products/get/')
+  async getNoParam (context: Context): Promise<void> {
+    context.status = StatusCodes.BAD_REQUEST
+    context.body = JSON.stringify({
+      status: 'error',
+      message: 'Missing product UUID',
+    })
+    return
+  }
+
+  @Get('/api/v1/products/get/:uuid')
   async get (context: Context): Promise<void> {
+    if (!context.params.uuid) {
+      context.status = StatusCodes.BAD_REQUEST
+      context.body = JSON.stringify({
+        status: 'error',
+        message: 'Missing product UUID',
+      })
+      return
+    }
     const product = await ProductManager.getProduct(context.params.uuid)
     if (!product) {
       context.status = StatusCodes.NOT_FOUND
@@ -35,14 +53,15 @@ export class ProductsV1 {
     }
   }
 
-  @Get('/v1/products/getAll')
+  @Get('/api/v1/products/getAll')
   async getAll (context: Context): Promise<void> {
     const products = await ProductManager.getAllProducts()
     if (products.length === 0) {
       context.status = StatusCodes.NOT_FOUND
       context.body = JSON.stringify({
-        status: 'error',
+        status: 'success',
         message: 'Products not found',
+        products: [],
       })
       return
     } else {
@@ -54,12 +73,20 @@ export class ProductsV1 {
     }
   }
 
-  @Post('/v1/products/create')
+  @Post('/api/v1/products/create')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
   async create (context: Context): Promise<void> {
     try {
       const product: BaseProduct = context.request.body.product
+      if (!product || !product.name || !product.price || !product.description || !product.photos || !product.category) {
+        context.status = StatusCodes.BAD_REQUEST
+        context.body = JSON.stringify({
+          status: 'error',
+          message: 'Bad product data',
+        })
+        return
+      }
       const productCreated = await ProductManager.createProduct(product)
       context.body = JSON.stringify({
         status: 'success',
@@ -85,12 +112,20 @@ export class ProductsV1 {
     }
   }
 
-  @Post('/v1/products/update')
+  @Post('/api/v1/products/update')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
   async update (context: Context): Promise<void> {
     try {
       const product: Partial<Product> & Pick<Product, 'uuid'> = context.request.body.product
+      if (!product || !product.uuid) {
+        context.status = StatusCodes.BAD_REQUEST
+        context.body = JSON.stringify({
+          status: 'error',
+          message: 'Missing product or UUID',
+        })
+        return
+      }
       const productUpdated = await ProductManager.updateProduct(product.uuid, product)
       context.body = JSON.stringify({
         status: 'success',
@@ -116,12 +151,20 @@ export class ProductsV1 {
     }
   }
 
-  @Post('/v1/products/delete')
+  @Post('/api/v1/products/delete')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
   async delete (context: Context): Promise<void> {
     try {
       const uuid: UUID = context.request.body.uuid
+      if (!uuid) {
+        context.status = StatusCodes.BAD_REQUEST
+        context.body = JSON.stringify({
+          status: 'error',
+          message: 'Missing product UUID',
+        })
+        return
+      }
       const productDeleted = await ProductManager.deleteProduct(uuid)
       context.body = JSON.stringify({
         status: productDeleted ? 'success' : 'error',

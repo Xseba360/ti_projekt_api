@@ -27,4 +27,4 @@ async function run () {
   // ************* rest api section: end **********
 }
 
-run()
+run().then()

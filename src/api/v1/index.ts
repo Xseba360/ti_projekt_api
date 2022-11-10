@@ -3,7 +3,7 @@ import { Context } from 'koa'
 
 @Router()
 export class APIIndexV1 {
-  @Get('/v1/')
+  @Get('/api/v1/')
   index (context: Context): void {
     context.body = JSON.stringify({
       status: 'error',
