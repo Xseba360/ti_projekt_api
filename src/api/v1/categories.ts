@@ -11,8 +11,10 @@ import {
 } from '../../CategoryManager.js'
 import { UUID } from '../../types/UUID.js'
 import APIKeyCheck from '../../APIKeyCheck.js'
+import CheckCORS from '../../CheckCORS.js'
 
 @Router()
+@Middleware(CheckCORS.check)
 export class ProductsV1 {
   @Get('/api/v1/categories')
   categories (context: Context): void {

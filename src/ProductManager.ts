@@ -34,16 +34,32 @@ export class ProductUpdateError extends Error {
 }
 
 export class ProductManager {
-  static async getProduct (uuid: UUID): Promise<Product> {
+  static async getProduct (uuid: UUID): Promise<Product | undefined> {
     const db = await SQLiteManager.getDb()
-    const products: Product[] = await db.all('SELECT * FROM products WHERE uuid = ?', [uuid])
-    return products[0]
+    const products = await db.all('SELECT * FROM products WHERE uuid = ?', [uuid])
+    if (products.length >= 1) {
+      products[0].photos = JSON.parse(products[0].photos)
+      return products[0]
+    }
+    return undefined
   }
 
   static async getAllProducts (): Promise<Product[]> {
     const db = await SQLiteManager.getDb()
-    return await db.all('SELECT * FROM products', [])
+    const products = await db.all('SELECT * FROM products', [])
+    for (const product of products) {
+      product.photos = JSON.parse(product.photos)
+    }
+    return products
+  }
 
+  static async getByCategory (category: UUID): Promise<Product[]> {
+    const db = await SQLiteManager.getDb()
+    const products = await db.all('SELECT * FROM products WHERE category = ?', [category])
+    for (const product of products) {
+      product.photos = JSON.parse(product.photos)
+    }
+    return products
   }
 
   static async createProduct (product: BaseProduct): Promise<Product> {

@@ -5,8 +5,10 @@ import { StatusCodes } from 'http-status-codes'
 import { BaseProduct, Product, ProductCreationError, ProductManager, ProductUpdateError } from '../../ProductManager.js'
 import { UUID } from '../../types/UUID.js'
 import APIKeyCheck from '../../APIKeyCheck.js'
+import CheckCORS from '../../CheckCORS.js'
 
 @Router()
+@Middleware(CheckCORS.check)
 export class ProductsV1 {
   @Get('/api/v1/products')
   products (context: Context): void {
@@ -56,6 +58,44 @@ export class ProductsV1 {
   @Get('/api/v1/products/getAll')
   async getAll (context: Context): Promise<void> {
     const products = await ProductManager.getAllProducts()
+    if (products.length === 0) {
+      context.status = StatusCodes.NOT_FOUND
+      context.body = JSON.stringify({
+        status: 'success',
+        message: 'Products not found',
+        products: [],
+      })
+      return
+    } else {
+      context.body = JSON.stringify({
+        status: 'success',
+        products: products,
+      })
+      return
+    }
+  }
+
+  @Get('/api/v1/products/getByCategory/')
+  async getByCategoryNoParam (context: Context): Promise<void> {
+    context.status = StatusCodes.BAD_REQUEST
+    context.body = JSON.stringify({
+      status: 'error',
+      message: 'Missing category UUID',
+    })
+    return
+  }
+
+  @Get('/api/v1/products/getByCategory/:category')
+  async getByCategory (context: Context): Promise<void> {
+    if (!context.params.category) {
+      context.status = StatusCodes.BAD_REQUEST
+      context.body = JSON.stringify({
+        status: 'error',
+        message: 'Missing category',
+      })
+      return
+    }
+    const products = await ProductManager.getByCategory(context.params.category)
     if (products.length === 0) {
       context.status = StatusCodes.NOT_FOUND
       context.body = JSON.stringify({

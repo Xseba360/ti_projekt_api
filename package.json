@@ -10,6 +10,7 @@
     "build:changelog": "npx @discordx/changelog --root=src",
     "dev": "ts-node-esm src/main.ts",
     "start": "node build/main.js",
+    "populate": "node build/main.js --populate data/produkty_poprawione.json",
     "watch": "nodemon --exec ts-node-esm src/main.ts",
     "test": "mocha -r ts-node/register  tests/**/*.test.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
