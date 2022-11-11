@@ -51,6 +51,16 @@ describe('ProductManager', function () {
     expect(updatedProduct.price).to.equal(200)
     expect(updatedProduct.category).to.equal('test-test-updated')
     expect(updatedProduct.photos.length).to.equal(4)
+    const updatedProductAgain = await ProductManager.updateProduct(testProduct.uuid, {
+      name: 'Updated (Again) Test Product',
+      description: 'Updated Test Description (Again)',
+      category: 'test-test-updated-again',
+    })
+    expect(updatedProductAgain.name).to.equal('Updated (Again) Test Product')
+    expect(updatedProductAgain.description).to.equal('Updated Test Description (Again)')
+    expect(updatedProductAgain.price).to.equal(200)
+    expect(updatedProductAgain.category).to.equal('test-test-updated-again')
+    expect(updatedProductAgain.photos.length).to.equal(4)
   })
   it('delete product', async () => {
     const foundProductBefore = await ProductManager.getProduct(testProduct.uuid)

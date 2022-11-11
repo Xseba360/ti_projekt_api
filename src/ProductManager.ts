@@ -19,6 +19,14 @@ export declare interface JSONProduct extends BaseProduct {
   id: string,
 }
 
+export declare interface ProductToUpdate {
+  name: string, // TEXT
+  description: string, //TEXT
+  price: number, // REAL
+  photos: string // TEXT
+  category: Category['uuid'], // BLOB
+}
+
 export class ProductCreationError extends Error {
   constructor (message: string) {
     super(message)
@@ -63,20 +71,26 @@ export class ProductManager {
   }
 
   static async createProduct (product: BaseProduct): Promise<Product> {
-    if (!product.name) {
-      throw new ProductCreationError('Product name is required')
-    }
-    if (!product.description) {
-      throw new ProductCreationError('Product description is required')
-    }
-    if (!product.price) {
-      throw new ProductCreationError('Product price is required')
-    }
-    if (!product.photos || !Array.isArray(product.photos) || product.photos.length <= 0) {
-      throw new ProductCreationError('Product photos is required')
-    }
-    if (!product.category) {
-      throw new ProductCreationError('Product category is required')
+    if (!this.isValidBaseProduct(product)) {
+      if (!(product as Record<string, unknown>).name) {
+        throw new ProductCreationError('Product name is required')
+      }
+      if (!(product as Record<string, unknown>).description) {
+        throw new ProductCreationError('Product description is required')
+      }
+      if (!(product as Record<string, unknown>).price) {
+        throw new ProductCreationError('Product price is required')
+      }
+      if (!(product as Record<string, unknown>).photos ||
+        !Array.isArray((product as Record<string, unknown>).photos) ||
+        (product as Record<string, Array<any>>).photos.length <= 0 ||
+        !(product as Record<string, Array<any>>).photos.every(photo => typeof (photo as unknown) === 'string')) {
+        throw new ProductCreationError('Product photos is required and must be an array of strings')
+      }
+      if (!(product as Record<string, unknown>).category) {
+        throw new ProductCreationError('Product category is required')
+      }
+      throw new ProductCreationError('Invalid product')
     }
 
     const db = await SQLiteManager.getDb()
@@ -109,41 +123,61 @@ export class ProductManager {
   }
 
   static async updateProduct (uuid: UUID, propsToUpdate: Partial<BaseProduct>): Promise<Product> {
-    const product = await ProductManager.getProduct(uuid)
+    const product: Product | undefined = await ProductManager.getProduct(uuid)
     if (!product) {
       throw new ProductUpdateError('Product not found')
     }
     const db = await SQLiteManager.getDb()
-    let props: (keyof Product)[] = []
-    if (propsToUpdate.name) {
-      props.push('name')
-      product.name = propsToUpdate.name
+
+    if (!this.isValidPartialProduct(propsToUpdate)) {
+      throw new ProductUpdateError('Invalid product to update')
     }
-    if (propsToUpdate.description) {
-      props.push('description')
-      product.description = propsToUpdate.description
+
+    //fixme: make this pretty, for now it works but it's extra ugly small brain
+
+    // Get rid of any unwanted keys
+    const finalProductToUpdate: Partial<BaseProduct> = {
+      name: propsToUpdate.name || undefined,
+      description: propsToUpdate.description || undefined,
+      price: propsToUpdate.price || undefined,
+      photos: propsToUpdate.photos || undefined,
+      category: propsToUpdate.category || undefined,
     }
-    if (propsToUpdate.price) {
-      props.push('price')
-      product.price = propsToUpdate.price
+
+    // This gets inserted into the query because the photos need to be stringified
+    const finalProductToUpdateDatabase: Partial<ProductToUpdate> = {
+      name: finalProductToUpdate.name || undefined,
+      description: finalProductToUpdate.description || undefined,
+      price: finalProductToUpdate.price || undefined,
+      photos: finalProductToUpdate.photos ? JSON.stringify(finalProductToUpdate.photos) : undefined,
+      category: finalProductToUpdate.category || undefined,
     }
-    if (propsToUpdate.photos) {
-      props.push('photos')
-      product.photos = propsToUpdate.photos
+
+    // iterate over the keys and add them to the query
+    let props: (keyof Partial<BaseProduct>)[] = []
+    for (const key of Object.keys(finalProductToUpdate) as (keyof Partial<BaseProduct>)[]) {
+      if (finalProductToUpdate[key] !== product[key] && finalProductToUpdate[key] !== undefined) {
+        props.push(key)
+      } else {
+        // if this is not here returned object have undefined values if they are not updated
+        delete finalProductToUpdateDatabase[key]
+        delete finalProductToUpdate[key]
+      }
     }
-    if (propsToUpdate.category) {
-      props.push('category')
-      product.category = propsToUpdate.category
-    }
+
     if (props.length <= 0) {
       throw new ProductUpdateError('No properties to update')
     }
+
+    // assign the values to the product to be returned at the end
+    Object.assign(product, finalProductToUpdate)
+
     const result = await db.run(`
                 UPDATE products
                 SET ${props.join(' = ?, ') + ' = ?'}
                 WHERE uuid = ?`,
       [
-        ...props.map(prop => product[prop]),
+        ...props.map(prop => finalProductToUpdateDatabase[prop]),
         uuid,
       ])
 
@@ -152,6 +186,33 @@ export class ProductManager {
     }
 
     return product
+  }
+
+  private static isValidBaseProduct (product: unknown): product is BaseProduct {
+    return typeof product === 'object' && product !== null &&
+      typeof (product as Record<string, unknown>).name === 'string' &&
+      typeof (product as Record<string, unknown>).description === 'string' &&
+      typeof (product as Record<string, unknown>).price === 'number' &&
+      Array.isArray((product as Record<string, unknown>).photos) &&
+      (product as Product).photos.every(photo => typeof (photo as unknown) === 'string') &&
+      typeof (product as Record<string, unknown>).category === 'string'
+  }
+
+  private static isValidPartialProduct (product: unknown): product is Partial<Product> {
+    return typeof product === 'object' && product !== null &&
+      (typeof (product as Record<string, unknown>).name === 'string' || (product as Record<string, unknown>).name === undefined) &&
+      (typeof (product as Record<string, unknown>).description === 'string' || (product as Record<string, unknown>).description === undefined) &&
+      (typeof (product as Record<string, unknown>).price === 'number' || (product as Record<string, unknown>).price === undefined) &&
+      (
+        (
+          Array.isArray((product as Record<string, unknown>).photos) &&
+          (product as Record<string, Array<any>>).photos.every(photo => typeof (photo as unknown) === 'string')
+        )
+        ||
+        (product as Record<string, unknown>).photos === undefined
+      ) &&
+      (typeof (product as Record<string, unknown>).category === 'string' || (product as Record<string, unknown>).category === undefined)
+
   }
 
   static async deleteProduct (uuid: UUID): Promise<boolean> {
