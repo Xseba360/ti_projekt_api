@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  API_KEY: testing
+
 jobs:
   build:
 
@@ -13,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x, 19.x]
+        node-version: [ 16.x, 18.x, 19.x ]
 
     steps:
       - uses: actions/checkout@v3

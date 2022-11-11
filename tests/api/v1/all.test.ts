@@ -62,7 +62,7 @@ async function StartTestWebServer (portParam?: number): Promise<[Koa, Server]> {
   const app = new Koa()
   await app.build()
   if (!process.env.API_KEY) {
-    throw new Error('apiKey is not set')
+    throw new Error('API_KEY is not set')
   }
   const port = portParam ?? (process.env.PORT ?? 3000)
   let server: Server = await new Promise<Server>((resolve) => {
