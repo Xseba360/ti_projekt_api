@@ -30,7 +30,8 @@ describe('ProductManager', function () {
   })
   it('get product', async () => {
     const foundProduct = await ProductManager.getProduct(testProduct.uuid)
-    expect(foundProduct.name).to.equal(testProduct.name)
+    expect(foundProduct).to.not.be.undefined
+    expect(foundProduct?.name).to.equal(testProduct.name)
   })
   it('update product', async () => {
     const updatedProduct = await ProductManager.updateProduct(testProduct.uuid, {
