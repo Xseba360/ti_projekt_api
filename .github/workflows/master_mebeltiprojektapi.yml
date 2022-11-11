@@ -3,6 +3,9 @@
 
 name: Build and deploy Node.js app to Azure Web App - mebeltiprojektapi
 
+env:
+  API_KEY: testing
+
 on:
   push:
     branches:
