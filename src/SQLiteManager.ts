@@ -4,6 +4,8 @@ import { CategoryManager } from './CategoryManager.js'
 import { ProductManager } from './ProductManager.js'
 import { UUID } from './types/UUID.js'
 import { readFile } from 'fs/promises'
+import url from 'url'
+import path from 'path'
 
 declare interface JSONProduct {
   id: string
@@ -25,6 +27,11 @@ export class SQLiteManager {
       })
       if (!await this.checkIfSchemasExist()) {
         await this.createSchemas()
+
+        console.log('Populating database with test data')
+        const pathToFileURL = url.pathToFileURL(path.join(process.cwd(), 'data', 'produkty_poprawione.json'))
+        await SQLiteManager.populateWithTestData(pathToFileURL)
+        console.log('Database has been populated with test data')
       }
     }
     return this.database

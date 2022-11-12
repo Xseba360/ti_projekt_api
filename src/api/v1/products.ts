@@ -75,6 +75,30 @@ export class ProductsV1 {
     }
   }
 
+  @Get('/api/v1/products/getRecommended')
+  @Get('/api/v1/products/getRecommended/:count')
+  async getRecommended (context: Context): Promise<void> {
+    const contextCount = context.params.count ? context.params.count : '6'
+    const parsedContextCount = parseInt(contextCount)
+    const count = isNaN(parsedContextCount) ? 6 : parsedContextCount
+    const products = await ProductManager.getRecommendedProducts(count)
+    if (products.length === 0) {
+      context.status = StatusCodes.NOT_FOUND
+      context.body = JSON.stringify({
+        status: 'success',
+        message: 'Products not found',
+        products: [],
+      })
+      return
+    } else {
+      context.body = JSON.stringify({
+        status: 'success',
+        products: products,
+      })
+      return
+    }
+  }
+
   @Get('/api/v1/products/getByCategory/')
   async getByCategoryNoParam (context: Context): Promise<void> {
     context.status = StatusCodes.BAD_REQUEST

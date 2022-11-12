@@ -70,6 +70,15 @@ export class ProductManager {
     return products
   }
 
+  static async getRecommendedProducts (count: number): Promise<Product[]> {
+    const db = await SQLiteManager.getDb()
+    const products = await db.all('SELECT * FROM products ORDER BY RANDOM() LIMIT ?', [count])
+    for (const product of products) {
+      product.photos = JSON.parse(product.photos)
+    }
+    return products
+  }
+
   static async createProduct (product: BaseProduct): Promise<Product> {
     if (!this.isValidBaseProduct(product)) {
       if (!(product as Record<string, unknown>).name) {
@@ -188,6 +197,12 @@ export class ProductManager {
     return product
   }
 
+  static async deleteProduct (uuid: UUID): Promise<boolean> {
+    const db = await SQLiteManager.getDb()
+    const result = await db.run('DELETE FROM products WHERE uuid = ?', [uuid])
+    return typeof result.changes === 'number' && result.changes > 0
+  }
+
   private static isValidBaseProduct (product: unknown): product is BaseProduct {
     return typeof product === 'object' && product !== null &&
       typeof (product as Record<string, unknown>).name === 'string' &&
@@ -213,11 +228,5 @@ export class ProductManager {
       ) &&
       (typeof (product as Record<string, unknown>).category === 'string' || (product as Record<string, unknown>).category === undefined)
 
-  }
-
-  static async deleteProduct (uuid: UUID): Promise<boolean> {
-    const db = await SQLiteManager.getDb()
-    const result = await db.run('DELETE FROM products WHERE uuid = ?', [uuid])
-    return typeof result.changes === 'number' && result.changes > 0
   }
 }
