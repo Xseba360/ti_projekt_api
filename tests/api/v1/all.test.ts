@@ -9,6 +9,7 @@ import { after } from 'mocha'
 import { createHttpTerminator, HttpTerminator } from 'http-terminator'
 import { Server } from 'http'
 import { Product } from '../../../src/ProductManager.js'
+import { UUID } from '../../../src/types/UUID.js'
 
 dotenv.config()
 
@@ -806,13 +807,127 @@ describe('Web API', function () {
     }
     expect(allProductsJson.products.length).to.equal(EXPECTED_PRODUCT_COUNT)
   })
+  it('get recommended products', async () => {
+    const EXPECTED_PRODUCT_COUNT = 6
+
+    // clean up all products
+    const productsBefore = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsBeforeJson = await productsBefore.json()
+    if (!IsValidApiResult(productsBeforeJson)) {
+      expect.fail('Invalid API result')
+      return
+    }
+    expect(productsBeforeJson.status).to.equal('success')
+    if (!Array.isArray(productsBeforeJson.products)) {
+      expect.fail('products is not an array')
+      return
+    }
+    for (const product of productsBeforeJson.products) {
+      const deleteResult = await fetch('http://localhost:3000/api/v1/products/delete', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          apiKey: process.env.API_KEY,
+          uuid: product.uuid,
+        })
+      })
+      const deleteResultJson = await deleteResult.json()
+      if (!IsValidApiResult(deleteResultJson)) {
+        expect.fail('Invalid API result')
+        return
+      }
+      expect(deleteResultJson.status).to.equal('success')
+    }
+    const productsAfter = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsAfterJson = await productsAfter.json()
+    if (!IsValidApiResult(productsAfterJson)) {
+      expect.fail('Invalid API result')
+      return
+    }
+    expect(productsAfterJson.status).to.equal('success')
+    if (!Array.isArray(productsAfterJson.products)) {
+      expect.fail('products is not an array')
+      return
+    }
+    expect(productsAfterJson.products.length).to.equal(0)
+
+    for (let i = 1; i <= EXPECTED_PRODUCT_COUNT; i++) {
+      const createResultAdd = await fetch('http://localhost:3000/api/v1/products/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          apiKey: process.env.API_KEY,
+          product: {
+            name: `Recommended Product ${i}`,
+            description: `New Recommended Description ${i}`,
+            price: 100 + i * 10,
+            category: `recommend-test-test-${i}`,
+            photos: [
+              'https://example.com/photo1.jpg',
+            ],
+          }
+        })
+      })
+      const createResultJsonAdd = await createResultAdd.json()
+      if (!IsValidApiResult(createResultJsonAdd) || !IsValidProduct(createResultJsonAdd.product)) {
+        expect.fail('Invalid API result or resulting product is not a valid product')
+        return
+      }
+      expect(createResultJsonAdd.status).to.equal('success')
+      expect(createResultJsonAdd.product.name).to.equal(`Recommended Product ${i}`)
+    }
+    // check if products exist
+    const allProducts = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const allProductsJson = await allProducts.json()
+    if (!IsValidApiResult(allProductsJson)) {
+      expect.fail('Invalid API result')
+      return
+    }
+    expect(allProductsJson.status).to.equal('success')
+    if (!Array.isArray(allProductsJson.products)) {
+      expect.fail('products is not an array')
+      return
+    }
+    expect(allProductsJson.products.length).to.equal(EXPECTED_PRODUCT_COUNT)
+
+    // check if products exist
+    const recommendedProducts = await fetch('http://localhost:3000/api/v1/products/getRecommended/6', {})
+    const recommendedProductsJson = await recommendedProducts.json()
+    if (!IsValidApiResult(recommendedProductsJson)) {
+      expect.fail('Invalid API result')
+      return
+    }
+    expect(recommendedProductsJson.status).to.equal('success')
+    if (!Array.isArray(recommendedProductsJson.products)) {
+      expect.fail('products is not an array')
+      return
+    }
+    expect(recommendedProductsJson.products.length).to.equal(EXPECTED_PRODUCT_COUNT)
+
+    const recommendedProductsJsonMap = new Map<UUID, Product>()
+    for (const product of recommendedProductsJson.products) {
+      recommendedProductsJsonMap.set(product.uuid, product)
+    }
+    for (const product of allProductsJson.products) {
+      expect(recommendedProductsJsonMap.get(product.uuid)).to.not.equal(undefined)
+      expect(recommendedProductsJsonMap.get(product.uuid)?.name).to.equal(product.name)
+      expect(recommendedProductsJsonMap.get(product.uuid)?.description).to.equal(product.description)
+      expect(recommendedProductsJsonMap.get(product.uuid)?.price).to.equal(product.price)
+      expect(recommendedProductsJsonMap.get(product.uuid)?.category).to.equal(product.category)
+      expect(recommendedProductsJsonMap.get(product.uuid)?.photos.length).to.equal(product.photos.length)
+    }
+
+  })
 
   after(async () => {
     try {
       await CleanUpCategories()
       await CleanUpProducts()
-    }
-    catch (e) {
+    } catch (e) {
       if (e instanceof SyntaxError) {
         httpTerminator = createHttpTerminator({ server })
         await httpTerminator.terminate()

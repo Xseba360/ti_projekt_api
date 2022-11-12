@@ -14,7 +14,7 @@
     },
     {
       "id": "2",
-      "name": "HUVUDSPELARE",
+      "name": "HOVEDSPILLER",
       "category": "Krzesła biurowe",
       "price": "259",
       "description": "Dostosuj wysokość i nachylenie, aby usiąść naprawdę wygodnie i rozpocząć grę. Oparcie zapewnia dobre wsparcie lędźwi - i nawet w gorączce grania jest Ci chłodno dzięki siatce mesh.",
@@ -26,10 +26,10 @@
     },
     {
       "id": "3",
-      "name": "MATCHSPEL",
+      "name": "KAMPSPILL",
       "category": "Krzesła biurowe",
       "price": "499",
-      "description": "Krzesło gamingowe MATCHSPEL pomaga grać na najwyższych obrotach. Całe ciało zyskuje dobre wsparcie, a wysokość krzesła, zagłówka i podłokietników można regulować, aby usiąść naprawdę wygodnie, gdy zaczyna się gra.",
+      "description": "Krzesło gamingowe KAMPSPILL pomaga grać na najwyższych obrotach. Całe ciało zyskuje dobre wsparcie, a wysokość krzesła, zagłówka i podłokietników można regulować, aby usiąść naprawdę wygodnie, gdy zaczyna się gra.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/matchspel-krzeslo-gamingowe-biurowe-bomstad-czarny__0985645_pe816716_s5.jpg?f=xl",
         "https://www.ikea.com/pl/pl/images/products/matchspel-krzeslo-gamingowe-biurowe-bomstad-czarny__1034552_pe837771_s5.jpg?f=xl",
@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "name": "RENBERGET",
+      "name": "RENDERFJELL",
       "category": "Krzesła biurowe",
       "price": "299",
       "description": "Wygodne, lekkie i łatwe do przemieszczania. Kształt podłokietników podnosi komfort, a mechanizm hamujący kółka utrzymuje krzesło w miejscu, gdy wstajesz, a zwalnia się, gdy siadasz.",
@@ -50,10 +50,10 @@
     },
     {
       "id": "5",
-      "name": "HATTEFJÆLL",
+      "name": "HUEJAKKE",
       "category": "Krzesła biurowe",
       "price": "999",
-      "description": "Krzesło biurowe HATTEFJÆLL ma elegancki, łagodny kształt i regulowane oparcie lędźwiowe, głębokość siedziska, podłokietniki i automatyczny mechanizm pochylenia – to prawdopodobnie nasze najbardziej ergonomiczne krzesło. Na wszystko gwarancja 10 lat!",
+      "description": "Krzesło biurowe HUEJAKKE ma elegancki, łagodny kształt i regulowane oparcie lędźwiowe, głębokość siedziska, podłokietniki i automatyczny mechanizm pochylenia – to prawdopodobnie nasze najbardziej ergonomiczne krzesło. Na wszystko gwarancja 10 lat!",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/hattefjaell-krzeslo-biurowe-z-podlokietnikami-gunnared-srednioszary__1019093_pe831300_s5.jpg?f=xl",
         "https://www.ikea.com/pl/pl/images/products/hattefjaell-krzeslo-biurowe-z-podlokietnikami-gunnared-srednioszary__1123538_pe874809_s5.jpg?f=xl",
@@ -62,7 +62,7 @@
     },
     {
       "id": "6",
-      "name": "VALEVAG",
+      "name": "VERDSETTING",
       "category": "Materace",
       "price": "1499",
       "description": "Twardy materac o wysokości 24 cm z indywidualnymi sprężynami kieszeniowymi. Równomierne rozłożenie ciężaru ciała w strefach komfortu zapewnia bardziej miękkie wsparcie dla bioder i ramion. Obfita warstwa pianki podnosi komfort.",
@@ -110,7 +110,7 @@
     },
     {
       "id": "10",
-      "name": "VESTMARKA",
+      "name": "VESTLAND",
       "category": "Materace",
       "price": "699",
       "description": "Prosty materac sprężynowy o wysokości 18 cm. Jest średnio twardy, ma sprężyny Bonnell, a warstwa pianki na wierzchu i watolina w pikowanym pokryciu zapewniają dodatkową amortyzację.",
@@ -146,7 +146,7 @@
     },
     {
       "id": "13",
-      "name": "BARLAST",
+      "name": "BALLAST",
       "category": "Lampy",
       "price": "41",
       "description": "Lampa podłogowa, czarny/biały 150cm",
@@ -158,7 +158,7 @@
     },
     {
       "id": "14",
-      "name": "BRUNSTA / HEMMA",
+      "name": "BRUN / HJEMMET",
       "category": "Lampy",
       "price": "42",
       "description": "Lampa wisząca, czarny 20cm",
@@ -182,7 +182,7 @@
     },
     {
       "id": "16",
-      "name": "TROTTEN",
+      "name": "HJØLGET",
       "category": "Biurka",
       "price": "999",
       "description": "Biurko z regulacją wysokości, beżowy/antracyt, 160x80 cm",
@@ -218,7 +218,7 @@
     },
     {
       "id": "19",
-      "name": "UTESPELARE",
+      "name": "UTSPILLER",
       "category": "Biurka",
       "price": "599",
       "description": "Biurko gamingowe, czarny, 160x80 cm",
@@ -242,7 +242,7 @@
     },
     {
       "id": "21",
-      "name": "PAX / BERGSBO",
+      "name": "PAX / FJELLBAR",
       "category": "Szafy",
       "price": "1 710",
       "description": "Czterodrzwiowa szafa w kolorze białym, z drzwiami o kolorze dębu, 200x60x236 cm",
@@ -254,7 +254,7 @@
     },
     {
       "id": "22",
-      "name": "BRIMNES",
+      "name": "BREMSEN",
       "category": "Szafy",
       "price": "599",
       "description": "Mała dwudrzwiowa szafa w kolorze białym, 78x190 cm",
@@ -266,7 +266,7 @@
     },
     {
       "id": "23",
-      "name": "PAX / GRIMO",
+      "name": "PAX / GRIMASER",
       "category": "Szafy",
       "price": "2 760",
       "description": "Kombinacja małych szafek z przestronną szafą w kolorze białym, z szarymi drzwiami, 200x60x236 cm",
@@ -278,7 +278,7 @@
     },
     {
       "id": "24",
-      "name": "RAKKESTAD",
+      "name": "RIKTIGBY",
       "category": "Szafy",
       "price": "799",
       "description": "Szafa z drzwiami przesuwanymi w kolorze czarny brąz, 117x176 cm",
@@ -302,7 +302,7 @@
     },
     {
       "id": "26",
-      "name": "FÆRGKLAR",
+      "name": "FARGEKART",
       "category": "Zastawy stołowe",
       "price": "149",
       "description": "Proste, funkcjonalne wzornictwo zastawy można łatwo dopasować do innych kolorów, kształtów lub różnych rodzajów szkliwa. W zestawie: 8 talerzy (śr. 26 cm), 8 talerzy deserowych (śr. 20 cm) i 8 talerzy głębokich (śr. 23 cm).",
@@ -314,10 +314,10 @@
     },
     {
       "id": "27",
-      "name": "VÆRDERA",
+      "name": "EVALUERE",
       "category": "Zastawy stołowe",
       "price": "219",
-      "description": "Seria VÆRDERA sprawdzi się zarówno na co dzień, jak i na przyjęciach, ponieważ jest wykonana z wytrzymałej porcelany skaleniowej. W zestawie: talerz (25x25 cm), talerzyk (18x18 cm) i talerz głęboki (20x20 cm), po 6 szt.",
+      "description": "Seria EVALUERE sprawdzi się zarówno na co dzień, jak i na przyjęciach, ponieważ jest wykonana z wytrzymałej porcelany skaleniowej. W zestawie: talerz (25x25 cm), talerzyk (18x18 cm) i talerz głęboki (20x20 cm), po 6 szt.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/vaerdera-serwis-18-szt-bialy__0712801_pe729021_s5.jpg?f=xl",
         "https://www.ikea.com/pl/pl/images/products/vaerdera-serwis-18-szt-bialy__0898467_pe609053_s5.jpg?f=xl",
@@ -348,7 +348,7 @@
     },
     {
       "id": "30",
-      "name": "UPPLAGA",
+      "name": "UTGAVE",
       "category": "Zastawy stołowe",
       "price": "259",
       "description": "Lekkość, trwałość i możliwość zmywania w zmywarce sprawiają, że ten serwis to faworyt dnia codziennego. W komplecie: 6 talerzy (28cm), 6 głębokich talerzy (26 cm) i 6talerzy do sałatek (22cm).",
@@ -360,7 +360,7 @@
     },
     {
       "id": "31",
-      "name": "VESKEN",
+      "name": "BAGGEN",
       "category": "Regały",
       "price": "49",
       "description": "Zmieści się w najmniejszych łazienkach, ale na półkach jest mnóstwo miejsca na wszystkie przybory toaletowe, od butelek z szamponem po mydło i drobne przedmioty.",
@@ -384,10 +384,10 @@
     },
     {
       "id": "33",
-      "name": "KALLAX",
+      "name": "KULDEX",
       "category": "Regały",
       "price": "199",
-      "description": "Pionowo lub poziomo - seria KALLAX dopasowuje się do gustu, miejsca, potrzeb i budżetu. Gładkie powierzchnie i zaokrąglone narożniki dają poczucie jakości, a regał można spersonalizować za pomocą wkładów i pudełek.",
+      "description": "Pionowo lub poziomo - seria KULDEX dopasowuje się do gustu, miejsca, potrzeb i budżetu. Gładkie powierzchnie i zaokrąglone narożniki dają poczucie jakości, a regał można spersonalizować za pomocą wkładów i pudełek.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/kallax-regal-bialy__0644757_pe702939_s5.jpg?f=l",
         "https://www.ikea.com/pl/pl/images/products/kallax-regal-bialy__1051325_pe845148_s5.jpg?f=l",
@@ -396,10 +396,10 @@
     },
     {
       "id": "34",
-      "name": "HYLLIS",
+      "name": "HYLLEST",
       "category": "Regały",
       "price": "75",
-      "description": "Ten moduł do przechowywania nadaje się idealnie na doniczki i rośliny ⎼ można go też łatwo przekształcić w szklarnię, jeśli uzupełnisz go pokrowcem HYLLIS.",
+      "description": "Ten moduł do przechowywania nadaje się idealnie na doniczki i rośliny ⎼ można go też łatwo przekształcić w szklarnię, jeśli uzupełnisz go pokrowcem HYLLEST.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0639121_pe704408_s5.jpg?f=l",
         "https://www.ikea.com/pl/pl/images/products/hyllis-regal-do-wewnatrz-na-zewnatrz__0715527_ph156576_s5.jpg?f=l",
@@ -408,10 +408,10 @@
     },
     {
       "id": "35",
-      "name": "BAGGEBO",
+      "name": "RAMREIR",
       "category": "Regały",
       "price": "79",
-      "description": "Projekt o czystych liniach, który dopasuje się do istniejącego wystroju lub pozostałych elementów z serii BAGGEBO. Schludny wygląd, z półkami i tylnym panelem z metalu i siatki, podkreśli przechowywane przedmioty.",
+      "description": "Projekt o czystych liniach, który dopasuje się do istniejącego wystroju lub pozostałych elementów z serii RAMREIR. Schludny wygląd, z półkami i tylnym panelem z metalu i siatki, podkreśli przechowywane przedmioty.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/baggebo-regal-metal-bialy__0981562_pe815396_s5.jpg?f=l",
         "https://www.ikea.com/pl/pl/images/products/baggebo-regal-metal-bialy__0981563_pe815398_s5.jpg?f=l",
@@ -432,7 +432,7 @@
     },
     {
       "id": "37",
-      "name": "SKOGHALL",
+      "name": "SKOGSHALEN",
       "category": "Inne",
       "price": "19",
       "description": "Hak, samoprzylepny, chrom. Cena za 3 szt. ",
@@ -456,7 +456,7 @@
     },
     {
       "id": "39",
-      "name": "KNODD",
+      "name": "KNUTE",
       "category": "Inne",
       "price": "99",
       "description": "Kosz metalowy z pokrywką, szary, 40 l",
@@ -468,7 +468,7 @@
     },
     {
       "id": "40",
-      "name": "PAPPIS",
+      "name": "PAPPEN",
       "category": "Inne",
       "price": "5",
       "description": "Pudełko z pokrywką, brązowy, 25x34x26 cm",
@@ -492,7 +492,7 @@
     },
     {
       "id": "42",
-      "name": "JUTTERN",
+      "name": "RYSSLET",
       "category": "Baterie kuchenne",
       "price": "699",
       "description": "Składana bateria przydaje się, gdy masz w kuchni okno otwierane do wewnątrz. Wystarczy złożyć chromowaną baterię i otworzyć okno do wietrzenia.",
@@ -504,7 +504,7 @@
     },
     {
       "id": "43",
-      "name": "GAMLESJØN",
+      "name": "GAMMELSJØ",
       "category": "Baterie kuchenne",
       "price": "499",
       "description": "Rustykalny kran w kolorze czarnym. Wysoka wylewka jest praktyczna do zmywania dużych garnków, a gwarantowana jakość przetrwa wiele lat zmywania i spłukiwania.",
@@ -516,7 +516,7 @@
     },
     {
       "id": "44",
-      "name": "TOLLSJØN",
+      "name": "TOLLSJØ",
       "category": "Baterie kuchenne",
       "price": "999",
       "description": "Czarna bateria. Ręczny prysznic jest przydatny do czyszczenia warzyw, a gwarantowana jakość przetrwa wiele lat zmywania i spłukiwania.",
@@ -528,7 +528,7 @@
     },
     {
       "id": "45",
-      "name": "GLITTRAN",
+      "name": "GLITTERET",
       "category": "Baterie kuchenne",
       "price": "499",
       "description": "Tradycyjny kran w kolorze czarnym pomaga obniżyć zużycie wody i energii.",
@@ -540,7 +540,7 @@
     },
     {
       "id": "46",
-      "name": "FORSÅ",
+      "name": "SÅKLART",
       "category": "Lampy",
       "price": "74",
       "description": "Klasyczna lampa biurkowa ze stali, która rozjaśni Twój dzień. Ramię i klosz są regulowane, dzięki czemu nadaje się doskonale do czytania przy biurku, w łóżku lub na kanapie.",
@@ -552,10 +552,10 @@
     },
     {
       "id": "47",
-      "name": "SOLKLINT",
+      "name": "SOLBRILLE",
       "category": "Lampy",
       "price": "60",
-      "description": "Jak małe klejnoty lampy SOLKLINT z błyszczącego mosiądzu i szarego, przezroczystego szkła, emitują delikatne, nastrojowe światło, które tworzy ekscytujące cienie na ścianach i sufitach - wszędzie tam, gdzie zechcesz je postawić.",
+      "description": "Jak małe klejnoty lampy SOLBRILLE z błyszczącego mosiądzu i szarego, przezroczystego szkła, emitują delikatne, nastrojowe światło, które tworzy ekscytujące cienie na ścianach i sufitach - wszędzie tam, gdzie zechcesz je postawić.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__0842257_pe781832_s5.jpg?f=xl",
         "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__1061774_ph179365_s5.jpg?f=xl",
@@ -564,7 +564,7 @@
     },
     {
       "id": "48",
-      "name": "ENRUM",
+      "name": "ETROM",
       "category": "Lampy",
       "price": "40",
       "description": "Latarenki zawsze podkreślają wystrój domu - a gdy na zewnątrz robi się ciemno, ich blask tworzy przytulną atmosferę. Dom wydaje się ciepły, goście czują, że są mile widziani, a każda chwila zyskuje romantyczny akcent.",
@@ -576,7 +576,7 @@
     },
     {
       "id": "49",
-      "name": "VIDJA",
+      "name": "BRYTER",
       "category": "Lampy",
       "price": "152",
       "description": "Dekoracyjna lampa podłogowa, która emituje w pomieszczeniu delikatne i ciepłe światło przez biały klosz z tkaniny w kształcie tuby. Równie ładnie wygląda w salonie, jak w przedpokoju czy sypialni tworząc przytulną atmosferę.",
@@ -588,7 +588,7 @@
     },
     {
       "id": "50",
-      "name": "FELSISK",
+      "name": "LYKKELIG",
       "category": "Lampy",
       "price": "109",
       "description": "Szukasz zgrabnej lampy w nowoczesnym stylu? Ta lampa wisząca o geometrycznym, otwartym kształcie to doskonały wybór. Wystarczy po prostu dodać ulubioną żarówkę dekoracyjną.",
@@ -612,7 +612,7 @@
     },
     {
       "id": "52",
-      "name": "ESSUNGA",
+      "name": "SPISEREN",
       "category": "Inne",
       "price": "29,99",
       "description": "Dekoracja ścienna, pies, 40x32 cm",
@@ -622,7 +622,7 @@
     },
     {
       "id": "53",
-      "name": "RØNNSKÆR",
+      "name": "BERGSKITT",
       "category": "Inne",
       "price": "149",
       "description": "Regały czarny, 42x103cm.",
@@ -634,7 +634,7 @@
     },
     {
       "id": "55",
-      "name": "PJÆTTERYD",
+      "name": "FINTRYDDIG",
       "category": "Inne",
       "price": "199",
       "description": "Obraz, 3 szt., start, 182x118 cm",
@@ -644,7 +644,7 @@
     },
     {
       "id": "56",
-      "name": "BROGRUND",
+      "name": "BROSTIFTELSEN",
       "category": "Baterie umywalkowe",
       "price": "450",
       "description": "Za każdym razem, gdy podnosisz dźwignię, oszczędzasz ciepłą wodę i energię. Funkcja zimnego startu pozwala uniknąć niepotrzebnego używania gorącej wody do codziennych czynności, takich jak mycie rąk lub mycie zębów.",
@@ -655,7 +655,7 @@
     },
     {
       "id": "57",
-      "name": "DALSKÆR",
+      "name": "DALKUTT",
       "category": "Baterie umywalkowe",
       "price": "300",
       "description": "Za każdym razem, gdy podnosisz dźwignię, oszczędzasz ciepłą wodę i energię. Funkcja zimnego startu pozwala uniknąć niepotrzebnego używania gorącej wody do codziennych czynności, takich jak mycie rąk lub mycie zębów.",
@@ -667,20 +667,20 @@
     },
     {
       "id": "58",
-      "name": "Cavally L",
+      "name": "HULLEUTFOR",
       "category": "Baterie umywalkowe",
       "price": "298",
-      "description": "Baterie umywalkowe GoodHome Cavally L czarna jest produktem przeznaczonym do montażu przy umywalce w łazience. To bateria stojąca wykonana z materiału odpornego na korozję.",
+      "description": "Baterie umywalkowe HULLEUTFOR czarna jest produktem przeznaczonym do montażu przy umywalce w łazience. To bateria stojąca wykonana z materiału odpornego na korozję.",
       "photos": [
         "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_GoodHome_Cavally_L_czarna-523154-653740.webp"
       ]
     },
     {
       "id": "59",
-      "name": "My Sport XL",
+      "name": "HÅNDSTOR",
       "category": "Baterie umywalkowe",
       "price": "498",
-      "description": "Baterie umywalkowe Hansgrohe wysoka My Sport XL to przede wszystkim połączenie jakości i elegancji. Powierzchnia korpusu jest wyższa niż w innych modelach tej serii.",
+      "description": "Baterie umywalkowe HÅNDSTOR to przede wszystkim połączenie jakości i elegancji. Powierzchnia korpusu jest wyższa niż w innych modelach tej serii.",
       "photos": [
         "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_wysoka_Hansgrohe_My_Sport_XL-521549-498865.webp",
         "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_wysoka_Hansgrohe_My_Sport_XL-521549-605435.webp",
@@ -689,10 +689,10 @@
     },
     {
       "id": "60",
-      "name": "Salaman",
+      "name": "BÆSJHATT",
       "category": "Baterie umywalkowe",
       "price": "248",
-      "description": "Baterie umywalkowe z kolekcji Salaman zapewnia komfort użytkowania i bezawaryjną pracę. Produkt został wykonany z materiałów wykończonych elegancką powłoką chromu, dzięki czemu prezentuje się stylowo i elegancko.",
+      "description": "Baterie umywalkowe z kolekcji BÆSJHATT zapewnia komfort użytkowania i bezawaryjną pracę. Produkt został wykonany z materiałów wykończonych elegancką powłoką chromu, dzięki czemu prezentuje się stylowo i elegancko.",
       "photos": [
         "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_Salaman_chrom-502666-207850.webp",
         "https://media.castorama.pl/media/catalog/product/B/a/Bateria_umywalkowa_Salaman_chrom-502666-444628.webp",
@@ -701,7 +701,7 @@
     },
     {
       "id": "61",
-      "name": "BERGENES",
+      "name": "BERGENS",
       "category": "Akcesoria biurowe",
       "price": "4,99",
       "description": "Uchwyt na komórkę/tablet, bambus. Pasuje do większości telefonów komórkowych i tabletów dzięki 2 szczelinom o różnej szerokości.",
@@ -713,7 +713,7 @@
     },
     {
       "id": "62",
-      "name": "MOPPE",
+      "name": "LITENSKUFF",
       "category": "Akcesoria biurowe",
       "price": "99,99",
       "description": "Minikomoda, sklejka brzozowa. Pomaga uporządkować wszystko począwszy od dokumentów, pendrive'ów i ładowarek po kosmetyki i akcesoria.",
@@ -737,7 +737,7 @@
     },
     {
       "id": "64",
-      "name": "ØVNING",
+      "name": "MOSJON",
       "category": "Akcesoria biurowe",
       "price": "59,99",
       "description": "Wielofunkcyjny podnóżek, który pomaga siedzieć przy biurku w dobrej pozycji do pracy. Stopy mają stabilne wsparcie, które zmniejsza nacisk na uda i przyczynia się do lepszego krążenia krwi.",
@@ -749,7 +749,7 @@
     },
     {
       "id": "65",
-      "name": "LÅNESPELARE ",
+      "name": "LÅNESPILLER",
       "category": "Akcesoria biurowe",
       "price": "99,99",
       "description": "Stojak na akcesoria. Można pomalować surowe drewno na dowolny kolor, aby nadać podstawce bardziej osobisty charakter.",
@@ -772,7 +772,7 @@
     },
     {
       "id": "67",
-      "name": "IDANÆS",
+      "name": "IØST",
       "category": "Inne",
       "price": "3299",
       "description": "Dwuosobowe łóżko z miękką tapicerką wykończone ponadczasowymi guzikami.",
@@ -785,7 +785,7 @@
     },
     {
       "id": "68",
-      "name": "UPPSPEL",
+      "name": "AVSPILLING",
       "category": "Inne",
       "price": "3398",
       "description": "Gamingowe biurko o wymiarach 80 cm x 140 cm.",
@@ -820,20 +820,20 @@
     },
     {
       "id": "71",
-      "name": "Kominek Elektryczny Winslow 1600W Dimplex",
+      "name": "VINNSAKTE",
       "category": "Inne",
       "price": "1199",
-      "description": "Kominek elektryczny z nowoczesnym, szklanym designem",
+      "description": "Kominek elektryczny 1600W z nowoczesnym, szklanym designem",
       "photos": [
         "https://static01.leroymerlin.pl/files/media/image/589/2870589/product/kominek-elektryczny-winslow-1600-w-dimplex,main.jpg"
       ]
     },
     {
       "id": "72",
-      "name": "Glebogryzarka spalinowa Handy NG86L 3,8kW 196cm3",
+      "name": "HENDIG",
       "category": "Inne",
       "price": "1499",
-      "description": "Glebogryzarka spalinowa Handy NG86L jest urządzeniem zapewniającym skuteczne spulchnianie gleby oraz jej kultywację przy pomocy noży.",
+      "description": "Glebogryzarka spalinowa HENDIG 3,8kW 196cm3 jest urządzeniem zapewniającym skuteczne spulchnianie gleby oraz jej kultywację przy pomocy noży.",
       "photos": [
         "https://static02.leroymerlin.pl/files/media/image/978/2855978/product/glebogryzarka-spalinowa-handy-ng86l-3-8kw-196cm3,main.jpg",
         "https://static02.leroymerlin.pl/files/media/image/979/2855979/product/glebogryzarka-spalinowa-handy-ng86l-3-8kw-196cm3,main.jpg"
@@ -841,10 +841,10 @@
     },
     {
       "id": "73",
-      "name": "Ręczna przecinarka do płytek ceramicznych MGŁ 600mm WALMER",
+      "name": "SKJÆRER",
       "category": "Inne",
       "price": "219",
-      "description": "Ręczna przecinarka do glazury o prowadnicy na łożyskach rolkowych znacząco ułatwia remont łazienki i innych pomieszczeń.",
+      "description": "Ręczna przecinarka do płytek ceramicznych o prowadnicy na łożyskach rolkowych znacząco ułatwia remont łazienki i innych pomieszczeń. 600mm",
       "photos": [
         "https://static02.leroymerlin.pl/files/media/image/034/1410034/product/reczna-przecinarka-do-plytek-ceramicznych-mgl-600-mm-walmer,main.jpg",
         "https://static02.leroymerlin.pl/files/media/image/927/2509927/product/reczna-przecinarka-do-plytek-ceramicznych-mgl-600-mm-walmer,main.jpg"
@@ -852,20 +852,20 @@
     },
     {
       "id": "74",
-      "name": "\"Kolanko 90° KW 1\"\" - KW 1\"\" USTM\"",
+      "name": "ALBUERØR",
       "category": "Inne",
       "price": "5,25",
-      "description": "Kolanko PVC o zagięciu 90 stopni i średnicy 1 cala.",
+      "description": "Kolanko PVC o zagięciu 90 stopni i średnicy 1 cala. \"Kolanko 90° KW 1\"\" - KW 1\"\" USTM\"",
       "photos": [
         "https://static02.leroymerlin.pl/files/media/image/657/1348657/product/kolanko-90-kw-1-kw-1-ustm,main.jpg"
       ]
     },
     {
       "id": "75",
-      "name": "Żyrandol Maria Teresa złoty E14 Candellux",
+      "name": "LYSEKRONE",
       "category": "Inne",
       "price": "3399",
-      "description": "Dostojny i wyszukany design, ekskluzywne połączenie metalu i tworzywa i kryształu.",
+      "description": "Dostojny i wyszukany design, ekskluzywne połączenie złotego metalu i tworzywa i kryształu. E14",
       "photos": [
         "https://static01.leroymerlin.pl/files/media/image/298/1955298/product/zyrandol-maria-teresa-zloty-e14-candellux,main.jpg",
         "https://static01.leroymerlin.pl/files/media/image/298/1955298/product/zyrandol-maria-teresa-zloty-e14-candellux,main.jpg"
@@ -873,10 +873,10 @@
     },
     {
       "id": "76",
-      "name": "FJALLBO",
+      "name": "FJELLBOER",
       "category": "Meble RTV",
       "price": "699",
-      "description": "Ponieważ drzwiczki przepuszczają sygnały z pilotów zdalnego sterowania, Twój sprzęt elektroniczny polubi FJÆLLBO. Ty prawdopodobnie też – otwarty tył ułatwia zarządzanie kablami.",
+      "description": "Ponieważ drzwiczki przepuszczają sygnały z pilotów zdalnego sterowania, Twój sprzęt elektroniczny polubi FJELLBOER. Ty prawdopodobnie też – otwarty tył ułatwia zarządzanie kablami.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/fjaellbo-szafka-pod-tv-czarny__0850235_pe616397_s5.jpg?f=s",
         "https://www.ikea.com/pl/pl/images/products/fjaellbo-szafka-pod-tv-czarny__0473390_pe614545_s5.jpg?f=s"
@@ -884,7 +884,7 @@
     },
     {
       "id": "77",
-      "name": "RANNAS",
+      "name": "STRANDA",
       "category": "Meble RTV",
       "price": "1 899",
       "description": "Matowa i przyjemna w dotyku powierzchnia, smukłe linie i stylowe uchwyty. Szafka pod telewizor RANNÆS dzięki przemyślanym detalom i wyrafinowanemu wyglądowi może stać się prawdziwą ozdobą w Twoim domu.",
@@ -895,7 +895,7 @@
     },
     {
       "id": "78",
-      "name": "BESTA",
+      "name": "BESTE",
       "category": "Meble RTV",
       "price": "656",
       "description": "Szafka TV zawieszona na ścianie tworzy elegancki, przestronny wystrój, nie ma też nóżek, które przeszkadzają podczas odkurzania podłogi.",
@@ -906,10 +906,10 @@
     },
     {
       "id": "79",
-      "name": "HEMNES",
+      "name": "HJEMMETS",
       "category": "Meble RTV",
       "price": "1299",
-      "description": "Lita sosna ze zrównoważonych upraw, naturalnego i odnawialnego materiału, który z każdym rokiem wygląda coraz piękniej. Podoba się? Połącz z innymi produktami z serii HEMNES.",
+      "description": "Lita sosna ze zrównoważonych upraw, naturalnego i odnawialnego materiału, który z każdym rokiem wygląda coraz piękniej. Podoba się? Połącz z innymi produktami z serii HJEMMETS.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/hemnes-szafka-pod-tv-biala-bejca-jasnobrazowy__0583377_pe671187_s5.jpg?f=s",
         "https://www.ikea.com/pl/pl/images/products/hemnes-szafka-pod-tv-biala-bejca-jasnobrazowy__0850139_pe671188_s5.jpg?f=s"
@@ -917,10 +917,10 @@
     },
     {
       "id": "80",
-      "name": "LACK",
+      "name": "LAKK",
       "category": "Meble RTV",
       "price": "59",
-      "description": "Szafka LACK pod TV łatwo dopasuje się do innych mebli. Dzięki unikalnej konstrukcji jest łatwa w montażu, lekka i ustawna - a my możemy obniżyć ceny, co poprawi Twój nastrój.",
+      "description": "Szafka LAKK pod TV łatwo dopasuje się do innych mebli. Dzięki unikalnej konstrukcji jest łatwa w montażu, lekka i ustawna - a my możemy obniżyć ceny, co poprawi Twój nastrój.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/lack-szafka-pod-tv-bialy__0625061_pe692088_s5.jpg?f=s",
         "https://www.ikea.com/pl/pl/images/products/lack-szafka-pod-tv-bialy__0849958_pe562005_s5.jpg?f=s"
@@ -928,7 +928,7 @@
     },
     {
       "id": "81",
-      "name": "NORDLI",
+      "name": "NORDLIG",
       "category": "Inne",
       "price": "2229",
       "description": "Możesz użyć jednej komody modułowej lub połączyć kilka i uzyskać rozwiązanie do przechowywania, które idealnie dopasuje się do Twojej przestrzeni. Można w prosty sposób stworzyć swój własny, osobisty projekt, łącząc komody w różnych kolorach.",
@@ -940,7 +940,7 @@
     },
     {
       "id": "82",
-      "name": "SKURUP",
+      "name": "SKJELL",
       "category": "Inne",
       "price": "110",
       "description": "W prosty sposób możesz skierować światło w różne miejsca, ponieważ każdy reflektor można regulować indywidualnie.",
@@ -952,7 +952,7 @@
     },
     {
       "id": "83",
-      "name": "NORDKISA",
+      "name": "NORDMYSER",
       "category": "Inne",
       "price": "1499",
       "description": "Ta szafa inspirowana jest klasycznymi skandynawskimi meblami o czystym i przewiewnym wzornictwie. Służy do przechowywania ubrań i rzeczy osobistych, będzie przyciągać wzrok w Twoim domu.",
@@ -976,10 +976,10 @@
     },
     {
       "id": "85",
-      "name": "HAUGA",
+      "name": "DYNGA",
       "category": "Inne",
       "price": "699",
-      "description": "Charakterystyczna górna półka jest cechą wspólną dla całej serii HAUGA i nadaje jej tradycyjny styl. Niezależnie od tego, czy wykorzystasz ją na czapki, pudełka czy dekoracje, krawędź półki utrzyma rzeczy na swoim miejscu.Powiększ miejsce do przechowywania i stwórz skoordynowany wygląd, budując własną kombinację do przechowywania HAUGA.",
+      "description": "Charakterystyczna górna półka jest cechą wspólną dla całej serii DYNGA i nadaje jej tradycyjny styl. Niezależnie od tego, czy wykorzystasz ją na czapki, pudełka czy dekoracje, krawędź półki utrzyma rzeczy na swoim miejscu.Powiększ miejsce do przechowywania i stwórz skoordynowany wygląd, budując własną kombinację do przechowywania DYNGA.",
       "photos": [
         "https://www.ikea.com/pl/pl/images/products/hauga-komoda-3-szuflady-szary__0931906_pe791296_s5.jpg?f=xl",
         "https://www.ikea.com/pl/pl/images/products/hauga-komoda-3-szuflady-szary__0948144_pe798882_s5.jpg?f=xl",
@@ -988,7 +988,7 @@
     },
     {
       "id": "86",
-      "name": "STRALA liść zielony",
+      "name": "STRÅLING liść zielony",
       "category": "Ozdoby świąteczne",
       "price": "20",
       "description": "Stwórz własną spersonalizowaną lampę wiszącą, łącząc abażur z oprawą oświetleniową STRÅLA lub podstawą.",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": "87",
-      "name": "STRALA śnieżynka",
+      "name": "STRÅLING śnieżynka",
       "category": "Ozdoby świąteczne",
       "price": "20",
       "description": "Daje ciepły, przytulny blask i tworzy miłą atmosfera w domu",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": "88",
-      "name": "Girlanda LED",
+      "name": "KRANS",
       "category": "Ozdoby świąteczne",
       "price": "50",
       "description": "Dzięki małym diodom i pozłacanym liściom ten łańcuch świetlny LED na baterie rzuca przytulne światło, które sprawi, że stół w jadalni i dom będą błyszczeć.",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": "89",
-      "name": "BLØTSNØ",
+      "name": "BLÅSNØ",
       "category": "Ozdoby świąteczne",
       "price": "100",
       "description": "Tworzy w pokoju delikatny, przytulny nastrój.",
