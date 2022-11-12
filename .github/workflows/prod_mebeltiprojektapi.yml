@@ -9,9 +9,6 @@ on:
       - prod
   workflow_dispatch:
 
-env:
-  API_KEY: testing
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -55,5 +52,5 @@ jobs:
         with:
           app-name: 'mebeltiprojektapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C5023188CDBC4A8BA4910C07307ACD7C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F3AD65EF5EA94B49B45B7C6DAE984D26 }}
           package: .
