@@ -9,6 +9,9 @@ on:
       - prod
   workflow_dispatch:
 
+env:
+  API_KEY: testing
+  
 jobs:
   build:
     runs-on: ubuntu-latest
