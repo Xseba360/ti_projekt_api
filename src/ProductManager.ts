@@ -247,9 +247,18 @@ export class ProductManager {
     })
     const options = {
       keys: [
-        'name',
-        'description',
-        'categoryName',
+        {
+          name: 'name',
+          weight: 0.5,
+        },
+        {
+          name: 'description',
+          weight: 0.3,
+        },
+        {
+          name: 'categoryName',
+          weight: 0.2,
+        }
       ]
     }
     const fuse: Fuse<ProductWithCategoryName> = new Fuse(productsWithCategoryNames, options)
