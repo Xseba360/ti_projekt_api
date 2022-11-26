@@ -28,7 +28,7 @@ export class SQLiteManager {
       if (!await this.checkIfSchemasExist()) {
         await this.createSchemas()
 
-        console.log('Populating database with test data')
+        console.log('No schemas detected in database. Populating database with test data now...')
         const pathToFileURL = url.pathToFileURL(path.join(process.cwd(), 'data', 'produkty_poprawione.json'))
         await SQLiteManager.populateWithTestData(pathToFileURL)
         console.log('Database has been populated with test data')

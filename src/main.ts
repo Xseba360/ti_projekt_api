@@ -4,6 +4,9 @@ import { SQLiteManager } from './SQLiteManager.js'
 import path from 'path'
 import url from 'url'
 import * as os from 'os'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 async function run () {
   // The following syntax should be used in the commonjs environment
@@ -14,6 +17,11 @@ async function run () {
   await importx(`${dirname(import.meta.url)}/api/**/*.{ts,js}`)
 
   // ************* rest api section: start **********
+
+  if (process.env.API_KEY === undefined || process.env.API_KEY === '' || process.env.API_KEY === 'invalid' || process.env.API_KEY === 'change-me' || !process.env.API_KEY) {
+    console.error('Please set a valid API_KEY in your .env file or in your environment variables.')
+    process.exit(1)
+  }
 
   // api: prepare server
   const server = new Koa()

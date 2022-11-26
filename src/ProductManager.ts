@@ -1,7 +1,8 @@
-import { Category } from './CategoryManager.js'
+import { Category, CategoryManager } from './CategoryManager.js'
 import { UUID } from './types/UUID.js'
 import { SQLiteManager } from './SQLiteManager.js'
 import * as crypto from 'crypto'
+import Fuse from 'fuse.js'
 
 export declare interface BaseProduct {
   name: string,
@@ -13,6 +14,10 @@ export declare interface BaseProduct {
 
 export declare interface Product extends BaseProduct {
   uuid: UUID,
+}
+
+export declare interface ProductWithCategoryName extends Product {
+  categoryName: string
 }
 
 export declare interface JSONProduct extends BaseProduct {
@@ -228,5 +233,33 @@ export class ProductManager {
       ) &&
       (typeof (product as Record<string, unknown>).category === 'string' || (product as Record<string, unknown>).category === undefined)
 
+  }
+
+  public static async searchProducts (query: string): Promise<Product[]> {
+    const allProducts = await ProductManager.getAllProducts()
+    const allCategories = await CategoryManager.getAllCategories()
+    const productsWithCategoryNames: ProductWithCategoryName[] = allProducts.map(product => {
+      const category = allCategories.find(category => category.uuid === product.category)
+      return {
+        ...product,
+        categoryName: category ? category.name : 'Unknown',
+      }
+    })
+    const options = {
+      keys: [
+        'name',
+        'description',
+        'categoryName',
+      ]
+    }
+    const fuse: Fuse<ProductWithCategoryName> = new Fuse(productsWithCategoryNames, options)
+    const foundProductsWithCategoryNames = fuse.search(query).map(result => result.item)
+    if (foundProductsWithCategoryNames.length > 10) {
+      return foundProductsWithCategoryNames.slice(0, 10)
+    }
+    return foundProductsWithCategoryNames.map(productWithCategoryName => {
+      const { categoryName, ...product } = productWithCategoryName
+      return product
+    })
   }
 }

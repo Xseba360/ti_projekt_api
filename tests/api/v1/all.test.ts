@@ -13,9 +13,11 @@ import { UUID } from '../../../src/types/UUID.js'
 
 dotenv.config()
 
+const port = process.env.port ?? 3000
+
 async function CleanUpProducts () {
   // check if category exists
-  const productsBefore = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+  const productsBefore = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
 
   const productsBeforeJson = await productsBefore.json()
 
@@ -25,7 +27,7 @@ async function CleanUpProducts () {
   }
   // delete all category
   for (const category of productsBeforeJson.products) {
-    await fetch('http://localhost:3000/api/v1/products/delete', {
+    await fetch(`http://localhost:${port}/api/v1/products/delete`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -38,7 +40,7 @@ async function CleanUpProducts () {
 
 async function CleanUpCategories () {
   // check if category exists
-  const categoriesBefore = await fetch('http://localhost:3000/api/v1/categories/getAll', {})
+  const categoriesBefore = await fetch(`http://localhost:${port}/api/v1/categories/getAll`, {})
   const categoriesBeforeJson = await categoriesBefore.json()
 
   if (!IsValidApiResult(categoriesBeforeJson) || !Array.isArray(categoriesBeforeJson.categories)) {
@@ -47,7 +49,7 @@ async function CleanUpCategories () {
   }
   // delete all category
   for (const category of categoriesBeforeJson.categories) {
-    await fetch('http://localhost:3000/api/v1/categories/delete', {
+    await fetch(`http://localhost:${port}/api/v1/categories/delete`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -62,8 +64,9 @@ async function StartTestWebServer (portParam?: number): Promise<[Koa, Server]> {
   await importx(`${dirname(import.meta.url)}/../../../src/api/**/*.{ts,js}`)
   const app = new Koa()
   await app.build()
-  if (!process.env.API_KEY) {
-    throw new Error('API_KEY is not set')
+  if (process.env.API_KEY === undefined || process.env.API_KEY === '' || process.env.API_KEY === 'invalid' || process.env.API_KEY === 'change-me' || !process.env.API_KEY) {
+    console.error('Please set a valid API_KEY in your .env file or in your environment variables.')
+    process.exit(1)
   }
   const port = portParam ?? (process.env.PORT ?? 3000)
   let server: Server = await new Promise<Server>((resolve) => {
@@ -115,7 +118,7 @@ describe('Web API', function () {
   let server: Server
   let httpTerminator: HttpTerminator
   before(async function () {
-    [app, server] = (await StartTestWebServer())
+    [app, server] = (await StartTestWebServer(Number(port)))
     try {
       await CleanUpCategories()
       await CleanUpProducts()
@@ -132,7 +135,7 @@ describe('Web API', function () {
   let createResultJson: ValidApiResultCategory
 
   beforeEach(async function () {
-    const createResult = await fetch('http://localhost:3000/api/v1/categories/create', {
+    const createResult = await fetch(`http://localhost:${port}/api/v1/categories/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -164,7 +167,7 @@ describe('Web API', function () {
     // expect(resultJson.category.name).to.equal('test')
     createResultJson = resultJson
 
-    const createResultProduct = await fetch('http://localhost:3000/api/v1/products/create', {
+    const createResultProduct = await fetch(`http://localhost:${port}/api/v1/products/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -203,7 +206,7 @@ describe('Web API', function () {
   })
 
   it('invalid api key', async function () {
-    const result = await fetch('http://localhost:3000/api/v1/categories/create', {
+    const result = await fetch(`http://localhost:${port}/api/v1/categories/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -225,7 +228,7 @@ describe('Web API', function () {
   })
 
   it('add category', async () => {
-    const createResultAdd = await fetch('http://localhost:3000/api/v1/categories/create', {
+    const createResultAdd = await fetch(`http://localhost:${port}/api/v1/categories/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -255,7 +258,7 @@ describe('Web API', function () {
       expect.fail('resulting category is not a valid category')
       return
     }
-    const getResult = await fetch('http://localhost:3000/api/v1/categories/get/' + createResultJson.category.uuid, {})
+    const getResult = await fetch(`http://localhost:${port}/api/v1/categories/get/` + createResultJson.category.uuid, {})
     const getResultJson = await getResult.json()
     if (!IsValidApiResult(getResultJson)) {
       expect.fail('Invalid API result')
@@ -270,7 +273,7 @@ describe('Web API', function () {
   })
 
   it('get category - missing uuid', async () => {
-    const getResult = await fetch('http://localhost:3000/api/v1/categories/get/', {})
+    const getResult = await fetch(`http://localhost:${port}/api/v1/categories/get/`, {})
     const getResultJson = await getResult.json()
     if (!IsValidApiResult(getResultJson)) {
       expect.fail('Invalid API result')
@@ -285,7 +288,7 @@ describe('Web API', function () {
       expect.fail('resulting category is not a valid category')
       return
     }
-    const updateResult = await fetch('http://localhost:3000/api/v1/categories/update', {
+    const updateResult = await fetch(`http://localhost:${port}/api/v1/categories/update`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -311,7 +314,7 @@ describe('Web API', function () {
   })
 
   it('update category - missing uuid', async () => {
-    const updateResult = await fetch('http://localhost:3000/api/v1/categories/update', {
+    const updateResult = await fetch(`http://localhost:${port}/api/v1/categories/update`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -338,7 +341,7 @@ describe('Web API', function () {
       return
     }
     // check if category exists
-    const getResultBefore = await fetch('http://localhost:3000/api/v1/categories/get/' + createResultJson.category.uuid, {})
+    const getResultBefore = await fetch(`http://localhost:${port}/api/v1/categories/get/` + createResultJson.category.uuid, {})
     const getResultBeforeJson = await getResultBefore.json()
     if (!IsValidApiResult(getResultBeforeJson)) {
       expect.fail('Invalid API result')
@@ -352,7 +355,7 @@ describe('Web API', function () {
     expect(getResultBeforeJson.category.name).to.equal(createResultJson.category.name)
 
     // delete category
-    const deleteResult = await fetch('http://localhost:3000/api/v1/categories/delete', {
+    const deleteResult = await fetch(`http://localhost:${port}/api/v1/categories/delete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -370,7 +373,7 @@ describe('Web API', function () {
     expect(deleteResultJson.status).to.equal('success')
 
     // check if category still exists
-    const getResultAfter = await fetch('http://localhost:3000/api/v1/categories/get/' + createResultJson.category.uuid, {})
+    const getResultAfter = await fetch(`http://localhost:${port}/api/v1/categories/get/` + createResultJson.category.uuid, {})
     const getResultAfterJson = await getResultAfter.json()
     if (!IsValidApiResult(getResultAfterJson)) {
       expect.fail('Invalid API result')
@@ -382,7 +385,7 @@ describe('Web API', function () {
 
   it('delete category - missing uuid', async () => {
     // delete category
-    const deleteResult = await fetch('http://localhost:3000/api/v1/categories/delete', {
+    const deleteResult = await fetch(`http://localhost:${port}/api/v1/categories/delete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -404,7 +407,7 @@ describe('Web API', function () {
     const EXPECTED_CATEGORY_COUNT = 10
 
     // check if category exists
-    const categoriesBefore = await fetch('http://localhost:3000/api/v1/categories/getAll', {})
+    const categoriesBefore = await fetch(`http://localhost:${port}/api/v1/categories/getAll`, {})
     const categoriesBeforeJson = await categoriesBefore.json()
     if (!IsValidApiResult(categoriesBeforeJson)) {
       expect.fail('Invalid API result')
@@ -418,7 +421,7 @@ describe('Web API', function () {
 
     // delete all category
     for (const category of categoriesBeforeJson.categories) {
-      const deleteResult = await fetch('http://localhost:3000/api/v1/categories/delete', {
+      const deleteResult = await fetch(`http://localhost:${port}/api/v1/categories/delete`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -435,7 +438,7 @@ describe('Web API', function () {
       }
       expect(deleteResultJson.status).to.equal('success')
     }
-    const categoriesAfter = await fetch('http://localhost:3000/api/v1/categories/getAll', {})
+    const categoriesAfter = await fetch(`http://localhost:${port}/api/v1/categories/getAll`, {})
     const categoriesAfterJson = await categoriesAfter.json()
     if (!IsValidApiResult(categoriesAfterJson)) {
       expect.fail('Invalid API result')
@@ -449,7 +452,7 @@ describe('Web API', function () {
     expect(categoriesAfterJson.categories.length).to.equal(0)
 
     for (let i = 1; i <= EXPECTED_CATEGORY_COUNT; i++) {
-      const createResultAdd = await fetch('http://localhost:3000/api/v1/categories/create', {
+      const createResultAdd = await fetch(`http://localhost:${port}/api/v1/categories/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -470,7 +473,7 @@ describe('Web API', function () {
       expect(createResultJsonAdd.category.name).to.equal(`New Category ${i}`)
     }
     // check if products exist
-    const allCategories = await fetch('http://localhost:3000/api/v1/categories/getAll', {})
+    const allCategories = await fetch(`http://localhost:${port}/api/v1/categories/getAll`, {})
     const allCategoriesJson = await allCategories.json()
     if (!IsValidApiResult(allCategoriesJson)) {
       expect.fail('Invalid API result')
@@ -485,7 +488,7 @@ describe('Web API', function () {
   })
 
   it('invalid api key', async () => {
-    const result = await fetch('http://localhost:3000/api/v1/products/create', {
+    const result = await fetch(`http://localhost:${port}/api/v1/products/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -514,7 +517,7 @@ describe('Web API', function () {
   })
 
   it('add product', async () => {
-    const createResultAdd = await fetch('http://localhost:3000/api/v1/products/create', {
+    const createResultAdd = await fetch(`http://localhost:${port}/api/v1/products/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -551,7 +554,7 @@ describe('Web API', function () {
       expect.fail('resulting product is not a valid product')
       return
     }
-    const getResult = await fetch('http://localhost:3000/api/v1/products/get/' + createResultJsonProduct.product.uuid, {})
+    const getResult = await fetch(`http://localhost:${port}/api/v1/products/get/` + createResultJsonProduct.product.uuid, {})
     const getResultJson = await getResult.json()
     if (!IsValidApiResult(getResultJson)) {
       expect.fail('Invalid API result')
@@ -566,7 +569,7 @@ describe('Web API', function () {
   })
 
   it('get product - missing uuid', async () => {
-    const getResult = await fetch('http://localhost:3000/api/v1/products/get/', {})
+    const getResult = await fetch(`http://localhost:${port}/api/v1/products/get/`, {})
     const getResultJson = await getResult.json()
     if (!IsValidApiResult(getResultJson)) {
       expect.fail('Invalid API result')
@@ -576,12 +579,31 @@ describe('Web API', function () {
     expect(getResultJson.message).to.equal('Missing product UUID')
   })
 
+  it('search product', async () => {
+    if (!IsValidProduct(createResultJsonProduct.product)) {
+      expect.fail('resulting product is not a valid product')
+      return
+    }
+    const getResult = await fetch(`http://localhost:${port}/api/v1/products/search/` + createResultJsonProduct.product.name, {})
+    const getResultJson = await getResult.json()
+    if (!IsValidApiResult(getResultJson)) {
+      expect.fail('Invalid API result')
+      return
+    }
+    expect(getResultJson.status).to.equal('success')
+    if (!IsValidProduct(getResultJson.product)) {
+      expect.fail('resulting product is not a valid product')
+      return
+    }
+    expect(getResultJson.product.name).to.equal(createResultJsonProduct.product.name)
+  })
+
   it('update product', async () => {
     if (!IsValidProduct(createResultJsonProduct.product)) {
       expect.fail('resulting product is not a valid category')
       return
     }
-    const updateResult = await fetch('http://localhost:3000/api/v1/products/update', {
+    const updateResult = await fetch(`http://localhost:${port}/api/v1/products/update`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -620,7 +642,7 @@ describe('Web API', function () {
   })
 
   it('update product - missing uuid', async () => {
-    const updateResult = await fetch('http://localhost:3000/api/v1/products/update', {
+    const updateResult = await fetch(`http://localhost:${port}/api/v1/products/update`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -656,7 +678,7 @@ describe('Web API', function () {
       return
     }
     // check if product exists
-    const getResultBefore = await fetch('http://localhost:3000/api/v1/products/get/' + createResultJsonProduct.product.uuid, {})
+    const getResultBefore = await fetch(`http://localhost:${port}/api/v1/products/get/` + createResultJsonProduct.product.uuid, {})
     const getResultBeforeJson = await getResultBefore.json()
     if (!IsValidApiResult(getResultBeforeJson)) {
       expect.fail('Invalid API result')
@@ -670,7 +692,7 @@ describe('Web API', function () {
     expect(getResultBeforeJson.product.name).to.equal(createResultJsonProduct.product.name)
 
     // delete product
-    const deleteResult = await fetch('http://localhost:3000/api/v1/products/delete', {
+    const deleteResult = await fetch(`http://localhost:${port}/api/v1/products/delete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -688,7 +710,7 @@ describe('Web API', function () {
     expect(deleteResultJson.status).to.equal('success')
 
     // check if product still exists
-    const getResultAfter = await fetch('http://localhost:3000/api/v1/products/get/' + createResultJsonProduct.product.uuid, {})
+    const getResultAfter = await fetch(`http://localhost:${port}/api/v1/products/get/` + createResultJsonProduct.product.uuid, {})
     const getResultAfterJson = await getResultAfter.json()
     if (!IsValidApiResult(getResultAfterJson)) {
       expect.fail('Invalid API result')
@@ -700,7 +722,7 @@ describe('Web API', function () {
 
   it('delete product - missing uuid', async () => {
     // delete product
-    const deleteResult = await fetch('http://localhost:3000/api/v1/products/delete', {
+    const deleteResult = await fetch(`http://localhost:${port}/api/v1/products/delete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -722,7 +744,7 @@ describe('Web API', function () {
     const EXPECTED_PRODUCT_COUNT = 10
 
     // check if products exist
-    const productsBefore = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsBefore = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const productsBeforeJson = await productsBefore.json()
     if (!IsValidApiResult(productsBeforeJson)) {
       expect.fail('Invalid API result')
@@ -736,7 +758,7 @@ describe('Web API', function () {
 
     // delete all products
     for (const product of productsBeforeJson.products) {
-      const deleteResult = await fetch('http://localhost:3000/api/v1/products/delete', {
+      const deleteResult = await fetch(`http://localhost:${port}/api/v1/products/delete`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -753,7 +775,7 @@ describe('Web API', function () {
       }
       expect(deleteResultJson.status).to.equal('success')
     }
-    const productsAfter = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsAfter = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const productsAfterJson = await productsAfter.json()
     if (!IsValidApiResult(productsAfterJson)) {
       expect.fail('Invalid API result')
@@ -767,7 +789,7 @@ describe('Web API', function () {
     expect(productsAfterJson.products.length).to.equal(0)
 
     for (let i = 1; i <= EXPECTED_PRODUCT_COUNT; i++) {
-      const createResultAdd = await fetch('http://localhost:3000/api/v1/products/create', {
+      const createResultAdd = await fetch(`http://localhost:${port}/api/v1/products/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -794,7 +816,7 @@ describe('Web API', function () {
       expect(createResultJsonAdd.product.name).to.equal(`New Test Product ${i}`)
     }
     // check if products exist
-    const allProducts = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const allProducts = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const allProductsJson = await allProducts.json()
     if (!IsValidApiResult(allProductsJson)) {
       expect.fail('Invalid API result')
@@ -811,7 +833,7 @@ describe('Web API', function () {
     const EXPECTED_PRODUCT_COUNT = 6
 
     // clean up all products
-    const productsBefore = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsBefore = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const productsBeforeJson = await productsBefore.json()
     if (!IsValidApiResult(productsBeforeJson)) {
       expect.fail('Invalid API result')
@@ -823,7 +845,7 @@ describe('Web API', function () {
       return
     }
     for (const product of productsBeforeJson.products) {
-      const deleteResult = await fetch('http://localhost:3000/api/v1/products/delete', {
+      const deleteResult = await fetch(`http://localhost:${port}/api/v1/products/delete`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -840,7 +862,7 @@ describe('Web API', function () {
       }
       expect(deleteResultJson.status).to.equal('success')
     }
-    const productsAfter = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const productsAfter = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const productsAfterJson = await productsAfter.json()
     if (!IsValidApiResult(productsAfterJson)) {
       expect.fail('Invalid API result')
@@ -854,7 +876,7 @@ describe('Web API', function () {
     expect(productsAfterJson.products.length).to.equal(0)
 
     for (let i = 1; i <= EXPECTED_PRODUCT_COUNT; i++) {
-      const createResultAdd = await fetch('http://localhost:3000/api/v1/products/create', {
+      const createResultAdd = await fetch(`http://localhost:${port}/api/v1/products/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -881,7 +903,7 @@ describe('Web API', function () {
       expect(createResultJsonAdd.product.name).to.equal(`Recommended Product ${i}`)
     }
     // check if products exist
-    const allProducts = await fetch('http://localhost:3000/api/v1/products/getAll', {})
+    const allProducts = await fetch(`http://localhost:${port}/api/v1/products/getAll`, {})
     const allProductsJson = await allProducts.json()
     if (!IsValidApiResult(allProductsJson)) {
       expect.fail('Invalid API result')
@@ -895,7 +917,7 @@ describe('Web API', function () {
     expect(allProductsJson.products.length).to.equal(EXPECTED_PRODUCT_COUNT)
 
     // check if products exist
-    const recommendedProducts = await fetch('http://localhost:3000/api/v1/products/getRecommended/6', {})
+    const recommendedProducts = await fetch(`http://localhost:${port}/api/v1/products/getRecommended/6`, {})
     const recommendedProductsJson = await recommendedProducts.json()
     if (!IsValidApiResult(recommendedProductsJson)) {
       expect.fail('Invalid API result')

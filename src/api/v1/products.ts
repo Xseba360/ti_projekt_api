@@ -137,6 +137,52 @@ export class ProductsV1 {
     }
   }
 
+  @Get('/api/v1/products/search/')
+  async searchNoParam (context: Context): Promise<void> {
+    context.status = StatusCodes.BAD_REQUEST
+    context.body = JSON.stringify({
+      status: 'error',
+      message: 'Missing query',
+    })
+    return
+  }
+
+  @Get('/api/v1/products/search/:query')
+  async search (context: Context): Promise<void> {
+    if (!context.params.query) {
+      context.status = StatusCodes.BAD_REQUEST
+      context.body = JSON.stringify({
+        status: 'error',
+        message: 'Missing query',
+      })
+      return
+    }
+    if (context.params.query.length < 3) {
+      context.status = StatusCodes.BAD_REQUEST
+      context.body = JSON.stringify({
+        status: 'error',
+        message: 'Query must be at least 3 characters',
+      })
+      return
+    }
+    const products = await ProductManager.searchProducts(context.params.query)
+    if (products.length === 0) {
+      context.status = StatusCodes.NOT_FOUND
+      context.body = JSON.stringify({
+        status: 'success',
+        message: 'Products not found',
+        products: [],
+      })
+      return
+    } else {
+      context.body = JSON.stringify({
+        status: 'success',
+        products: products,
+      })
+      return
+    }
+  }
+
   @Post('/api/v1/products/create')
   @Middleware(APIKeyCheck.check)
   @Middleware(koaBody())
