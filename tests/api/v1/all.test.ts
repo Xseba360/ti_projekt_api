@@ -591,11 +591,16 @@ describe('Web API', function () {
       return
     }
     expect(getResultJson.status).to.equal('success')
-    if (!IsValidProduct(getResultJson.product)) {
+    if (!Array.isArray(getResultJson.products)) {
+      expect.fail('products is not an array')
+      return
+    }
+    expect(getResultJson.products.length).to.be.gte(1)
+    if (!IsValidProduct(getResultJson.products[0])) {
       expect.fail('resulting product is not a valid product')
       return
     }
-    expect(getResultJson.product.name).to.equal(createResultJsonProduct.product.name)
+    expect(getResultJson.products[0].name).to.equal(createResultJsonProduct.product.name)
   })
 
   it('update product', async () => {
