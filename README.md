@@ -35,7 +35,7 @@ npm run test
 - [discordx.js.org](https://discordx.js.org)
 - [Tutorials (dev.to)](https://dev.to/oceanroleplay/series/14317)
 
-# 🧔🏻‍♂️ Autor
+# 👷🏻‍♂️ Autor
 
 Sebastian Gładki
 nr. indeksu: 109 534
